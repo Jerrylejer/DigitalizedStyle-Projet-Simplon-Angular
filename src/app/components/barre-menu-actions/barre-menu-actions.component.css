@@ -1,0 +1,90 @@
+
+/* burger et navigation */
+
+.header__navigation {
+    min-height: 80px;
+}
+
+.header__burger {
+    gap: 3px;
+    margin-left: 21px;
+    min-width: 20px;
+}
+
+.barre__hamburger {
+    width: 50px;
+    height: 7px;
+    background-color: var(--color-purple);
+    border-radius: 5px;
+}
+
+.header__burger:hover {
+    cursor: pointer;
+}
+
+.header__icons-client {
+    min-width: 600px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.input__search {
+    gap: 15px;
+}
+
+.input__search input {
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+}
+
+.input__search input::placeholder {
+    padding-left: 15px;
+}
+
+.input__search img {
+    width: 17px;
+}
+
+.search {
+    min-width: 250px;
+}
+
+.icons__container {
+    width: 150px;
+    justify-content: space-between;
+    margin-right: 21px;
+}
+
+/** CLASS ANIMATIONS JS POUR LE BURGER QUI SE TRANSFORME EN CROIX*/
+/* barres hamburger en position normale */
+.visible {
+    opacity: 1;
+    transition: 1s;
+}
+
+.initial1 {
+    transform: translateY(0px) rotate(0deg);
+    transition: 0.5s;
+}
+
+.initial2 {
+    transform: translateY(0px) rotate(0deg);
+    transition: 0.5s;
+}
+
+/* mise en place de la croix */
+.opacity {
+    opacity: 0;
+    transition: 1s;
+}
+
+.rotate1 {
+    transform: translateY(10px) rotate(130deg);
+    transition: 0.8s;
+}
+
+.rotate2 {
+    transform: translateY(-10px) rotate(-130deg);
+    transition: 0.8s;
+}
