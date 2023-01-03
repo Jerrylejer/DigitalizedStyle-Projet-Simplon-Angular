@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
 import { BarreMenuActionsComponent } from './components/barre-menu-actions/barre-menu-actions.component';
 
-import { MenuNavigationComponent } from './components/menu-navigation/menu-navigation.component';
-
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -19,16 +17,10 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-
     PaiementComponent,
     BarreMenuActionsComponent,
-
-
-    MenuNavigationComponent,
-
     HeaderComponent,
     FooterComponent,
-
   ],
   imports: [
     BrowserModule,
