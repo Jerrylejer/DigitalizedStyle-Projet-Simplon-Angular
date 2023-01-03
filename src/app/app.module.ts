@@ -7,7 +7,7 @@ import { PaiementComponent } from './pages/paiement/paiement.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PaiementComponent
+    PaiementComponent,
   ],
   imports: [
     BrowserModule
