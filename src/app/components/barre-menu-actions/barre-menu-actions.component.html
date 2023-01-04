@@ -1,10 +1,10 @@
 <!-- Barre de menu -->
 <div class="header__navigation flex">
   <!-- Burger pour partie de gauche-->
-  <div class="header__burger flex column" id="burger">
-    <span class="barre__hamburger initial1" id="barre_1"></span>
-    <span class="barre__hamburger visible" id="barre_2"></span>
-    <span class="barre__hamburger initial2" id="barre_3"></span>
+  <div class="header__burger flex column" id="burger" #burger (click)="burgerSwitch()">
+    <span class="barre__hamburger initial1" id="barre_1" #barre_1></span>
+    <span class="barre__hamburger visible" id="barre_2" #barre_2></span>
+    <span class="barre__hamburger initial2" id="barre_3" #barre_3></span>
   </div>
   <!-- Partie de droite avec Search et 3 icônes -->
   <div class="header__icons-client flex">
@@ -40,12 +40,12 @@
   </div>
 </div>
 <!-- Navigation desktop en ligne puis à 992px navigation mobile en colonne-->
-<nav class="nav__desktop flex open" id="nav">
+<nav class="nav__desktop flex open" id="nav" #nav>
   <div class="articles-du-moment nav__list">
     <h2><a href="#">Articles</a></h2>
     <ul class="nav__nouveautes">
       <li>
-        <a href="/categories.html">Catégories principales</a>
+        <a href="/categories.html" >Catégories principales</a>
       </li>
       <li class="responsive-off"><a href="#">Nouveauté</a></li>
       <li>
