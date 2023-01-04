@@ -19,6 +19,7 @@ import { OneProductComponent } from './pages/one-product/one-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { CategoriesPrincipalesComponent } from './components/categories-principales/categories-principales.component';
 
 
 
@@ -37,6 +38,7 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
     NotFoundComponent,
     CarrouselComponent,
     NewsletterComponent,
+    CategoriesPrincipalesComponent,
   ],
   imports: [
     BrowserModule,
