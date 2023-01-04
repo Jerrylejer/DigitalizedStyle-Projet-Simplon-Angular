@@ -17,9 +17,11 @@ import { OneCategorieComponent } from './pages/one-categorie/one-categorie.compo
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { OneProductComponent } from './pages/one-product/one-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProduitCardComponent } from './components/produit-card/produit-card.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { CategoriesPrincipalesComponent } from './components/categories-principales/categories-principales.component';
+
 
 
 
@@ -36,6 +38,7 @@ import { CategoriesPrincipalesComponent } from './components/categories-principa
     ProductListComponent,
     OneProductComponent,
     NotFoundComponent,
+    ProduitCardComponent,
     CarrouselComponent,
     NewsletterComponent,
     CategoriesPrincipalesComponent,
