@@ -56,6 +56,10 @@
     margin-right: 21px;
 }
 
+.heart {
+    width: 29px;
+}
+
 /** CLASS ANIMATIONS JS POUR LE BURGER QUI SE TRANSFORME EN CROIX*/
 /* barres hamburger en position normale */
 .visible {

@@ -1,107 +1,105 @@
- <!-- Barre de menu -->
- <div class="header__navigation flex">
-    <!-- Burger pour partie de gauche-->
-    <div class="header__burger flex column" id="burger">
-        <span class="barre__hamburger initial1" id="barre_1"></span>
-        <span class="barre__hamburger visible" id="barre_2"></span>
-        <span class="barre__hamburger initial2" id="barre_3"></span>
+<!-- Barre de menu -->
+<div class="header__navigation flex">
+  <!-- Burger pour partie de gauche-->
+  <div class="header__burger flex column" id="burger">
+    <span class="barre__hamburger initial1" id="barre_1"></span>
+    <span class="barre__hamburger visible" id="barre_2"></span>
+    <span class="barre__hamburger initial2" id="barre_3"></span>
+  </div>
+  <!-- Partie de droite avec Search et 3 icônes -->
+  <div class="header__icons-client flex">
+    <!-- Barre Search -->
+    <div class="input__search flex">
+      <img
+        src="../../../assets/icônes/barreMenuActions/loupe.png"
+        alt="loupe input"
+      />
+      <input type="search" name="search" class="search" placeholder="Search" />
     </div>
-    <!-- Partie de droite avec Search et 3 icônes -->
-    <div class="header__icons-client flex">
-        <!-- Barre Search -->
-        <div class="input__search flex">
-            <img src="../../../assets/icônes/barreMenuActions/loupe.png" alt="loupe input" />
-            <input
-                type="search"
-                name="search"
-                class="search"
-                placeholder="Search"
-            />
-        </div>
-        <!-- Icônes d'action client -->
-        <div class="icons__client flex">
-            <div class="icons__container flex">
-                <a href="#"
-                    ><img
-                        src="../../../assets/icônes/barreMenuActions/icône_compte.png"
-                        alt="compte client"
-                /></a>
-                <a href="#"
-                    ><img
-                        src="../../../assets/icônes/barreMenuActions/icône_panier.png"
-                        alt="compte client"
-                /></a>
-                <a href="#"
-                    ><img
-                        src="../../../assets/icônes/barreMenuActions/icône_favoris.png"
-                        alt="compte client"
-                /></a>
-            </div>
-        </div>
+    <!-- Icônes d'action client -->
+    <div class="icons__client flex">
+      <div class="icons__container flex">
+        <a href="#"
+          ><img
+            src="../../../assets/icônes/barreMenuActions/icône_compte.png"
+            alt="compte client"
+        /></a>
+        <a href="#"
+          ><img
+            src="../../../assets/icônes/barreMenuActions/icône_panier.png"
+            alt="compte client"
+        /></a>
+        <a href="#"
+          ><img
+            class="heart"
+            src="../../../assets/wishlistCoeur/coeur.png"
+            alt="compte client"
+        /></a>
+      </div>
     </div>
+  </div>
 </div>
 <!-- Navigation desktop en ligne puis à 992px navigation mobile en colonne-->
 <nav class="nav__desktop flex open" id="nav">
-    <div class="articles-du-moment nav__list">
-        <h2><a href="#">Articles</a></h2>
-        <ul class="nav__nouveautes">
-            <li>
-                <a href="/categories.html">Catégories principales</a>
-            </li>
-            <li class="responsive-off"><a href="#">Nouveauté</a></li>
-            <li>
-                <a href="#">Meilleures ventes</a>
-            </li>
-            <li class="responsive-off">
-                <a href="#">Idées cadeaux</a>
-            </li>
-        </ul>
-    </div>
-    <div class="hommes nav__list">
-        <h2><a href="#">Hommes</a></h2>
-        <ul class="nav__hommes">
-            <li><a href="#">Tous les vêtements</a></li>
-            <li class="responsive-off">
-                <a href="#">Hauts et tee-shirts</a>
-            </li>
-            <li class="responsive-off">
-                <a href="#">Bas et pantalons</a>
-            </li>
-            <li class="responsive-off"><a href="#">Combinaisons</a></li>
-            <li><a href="#">Chaussures</a></li>
-        </ul>
-    </div>
-    <!-- Categories Femme pour tester le routeur -->
-    <div class="femmes nav__list">
-        <h2><a routerLink="/categories/:id">Femme</a></h2>
-        <ul class="nav__femmes">
-            <li><a routerLink="/products">Tous les articles</a></li>
-            <li class="responsive-off">
-                <a routerLink="/products">Hauts et Tee-shirts</a>
-            </li>
-            <li class="responsive-off">
-                <a routerLink="/products">Bas et Pantalons</a>
-            </li>
-            <li class="responsive-off"><a routerLink="/products">Combinaisons</a></li>
-            <li><a routerLink="/products">Chaussures</a></li>
-        </ul>
-    </div>
-    <!-- categorie Femme pour tester le routeur -->
-    <div class="accessoires nav__list">
-        <h2><a href="#">Accessoires</a></h2>
-        <ul class="nav__accessoires">
-            <li><a href="#">Accessoires Tech</a></li>
-            <li><a href="#">Accessoires fashion</a></li>
-        </ul>
-    </div>
-    <div class="digitalized nav__list">
-        <h2>
-            <a href="#">Digitalized<span>Style</span></a>
-        </h2>
-        <ul class="nav__digitalized">
-            <li><a href="#">Adresse</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+  <div class="articles-du-moment nav__list">
+    <h2><a href="#">Articles</a></h2>
+    <ul class="nav__nouveautes">
+      <li>
+        <a href="/categories.html">Catégories principales</a>
+      </li>
+      <li class="responsive-off"><a href="#">Nouveauté</a></li>
+      <li>
+        <a href="#">Meilleures ventes</a>
+      </li>
+      <li class="responsive-off">
+        <a href="#">Idées cadeaux</a>
+      </li>
+    </ul>
+  </div>
+  <div class="hommes nav__list">
+    <h2><a href="#">Hommes</a></h2>
+    <ul class="nav__hommes">
+      <li><a href="#">Tous les vêtements</a></li>
+      <li class="responsive-off">
+        <a href="#">Hauts et tee-shirts</a>
+      </li>
+      <li class="responsive-off">
+        <a href="#">Bas et pantalons</a>
+      </li>
+      <li class="responsive-off"><a href="#">Combinaisons</a></li>
+      <li><a href="#">Chaussures</a></li>
+    </ul>
+  </div>
+  <!-- Categories Femme pour tester le routeur -->
+  <div class="femmes nav__list">
+    <h2><a routerLink="/categories/:id">Femme</a></h2>
+    <ul class="nav__femmes">
+      <li><a routerLink="/products">Tous les articles</a></li>
+      <li class="responsive-off">
+        <a routerLink="/products">Hauts et Tee-shirts</a>
+      </li>
+      <li class="responsive-off">
+        <a routerLink="/products">Bas et Pantalons</a>
+      </li>
+      <li class="responsive-off"><a routerLink="/products">Combinaisons</a></li>
+      <li><a routerLink="/products">Chaussures</a></li>
+    </ul>
+  </div>
+  <!-- categorie Femme pour tester le routeur -->
+  <div class="accessoires nav__list">
+    <h2><a href="#">Accessoires</a></h2>
+    <ul class="nav__accessoires">
+      <li><a href="#">Accessoires Tech</a></li>
+      <li><a href="#">Accessoires fashion</a></li>
+    </ul>
+  </div>
+  <div class="digitalized nav__list">
+    <h2>
+      <a href="#">Digitalized<span>Style</span></a>
+    </h2>
+    <ul class="nav__digitalized">
+      <li><a href="#">Adresse</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-
