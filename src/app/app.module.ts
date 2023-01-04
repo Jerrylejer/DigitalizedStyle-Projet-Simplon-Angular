@@ -17,6 +17,7 @@ import { OneCategorieComponent } from './pages/one-categorie/one-categorie.compo
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { OneProductComponent } from './pages/one-product/one-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
 
 
 
@@ -33,6 +34,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     ProductListComponent,
     OneProductComponent,
     NotFoundComponent,
+    CarrouselComponent,
   ],
   imports: [
     BrowserModule,
