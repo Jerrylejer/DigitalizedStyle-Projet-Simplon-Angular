@@ -20,7 +20,7 @@ export const PRODUCTS: Product[]=[
     titre:"BIJOUX"
  },
  {
-    image: "assets/categories/accessoireMasque.jpg",
+    image: "assets/categories/categoriesAccessoir-masque.png",
     titre:"ACCESSOIRES "
  },
  {
