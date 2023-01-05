@@ -6,6 +6,10 @@ export interface Item {
    image: string;
    titre: string;
 }
+export interface Picture {
+   image: string;
+   titre: string;
+}
 export const PRODUCTS: Product[]=[
  {
     image: "assets/categories/categoriesFemme.png",
@@ -43,6 +47,32 @@ export const PRODUCTS: Product[]=[
    },
    {
       image: "assets/categorieFemme/robe.jpg",
+      titre:"ROBES"
+   },
+   {
+      image: "assets/categorieFemme/bottes.jpg",
+      titre:"SOULIERS"
+   },
+   {
+      image: "assets/categorieFemme/top.jpg",
+      titre:"TOP ET T-SHIRT"
+   },
+   {
+      image: "assets/categorieFemme/pantalon.png",
+      titre:"PANTALONS"
+   }
+]
+export const PICTURE: Picture[] = [
+   {
+      image: "assets/Doudounnes/doudounne2.jpg",
+      titre: "Digit-dunne 4.0"
+   },
+   {
+      image: "assets/Doudounnes/doudounneVerte.png",
+      titre:"Meta conect-dunne"
+   },
+   {
+      image: "assets/Doudounnes/doudounne4.jpg",
       titre:"ROBES"
    },
    {
