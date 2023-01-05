@@ -1,0 +1,41 @@
+/*? SECTION UNIVERS */
+.univers {
+    height: auto;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    padding: 21px;
+}
+
+.univers h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.univers__card-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* gap quand le wrap se met en action */
+    gap: 35px;
+}
+
+.univers__cards {
+    width: max(410px);
+    height: auto;
+    align-items: flex-start;
+}
+
+.univers__cards-titre {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0px;
+    font-size: large;
+    padding-bottom: 10px;
+    border-bottom: 10px solid white;
+}
+
+.univers__cards-titre:hover {
+    cursor: pointer;
+    transition: 1s;
+    border-bottom: 10px solid var(--color-purple);
+}
