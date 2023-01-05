@@ -21,6 +21,7 @@ import { ProduitCardComponent } from './components/produit-card/produit-card.com
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { CategoriesPrincipalesComponent } from './components/categories-principales/categories-principales.component';
+import { ModuleTopHomeComponent } from './components/module-top-home/module-top-home.component';
 
 
 
@@ -42,6 +43,7 @@ import { CategoriesPrincipalesComponent } from './components/categories-principa
     CarrouselComponent,
     NewsletterComponent,
     CategoriesPrincipalesComponent,
+    ModuleTopHomeComponent,
   ],
   imports: [
     BrowserModule,

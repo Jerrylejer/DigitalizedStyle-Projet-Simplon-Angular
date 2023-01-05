@@ -1,0 +1,69 @@
+/*? SECTION DECOUVERTE */
+.decouverte {
+    height: 100vh;
+    width: min(100%, 90%);
+    position: relative;
+    top: -300px;
+    margin: 0 auto 270px;
+}
+
+.decouverte__container {
+    justify-content: center;
+}
+
+.image__responsive {
+    display: none;
+}
+
+.decouverte__image-accueil {
+    margin-top: 235px;
+    width: 100%;
+}
+
+.decouverte__image-accueil img {
+    margin: 0 auto;
+    width: min(1500px, 80%);
+}
+
+.decouverte__image-legende {
+    text-align: center;
+    margin-top: 60px;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.legende {
+    align-items: baseline;
+    justify-content: center;
+}
+
+.legende button {
+    font-size: 1rem;
+    font-family: 'Nunito';
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.legende__accueil {
+    font-size: 1.5rem;
+}
+
+.decouverte__colonne-gauche,
+.decouverte__colonne-droite {
+    height: 1250px;
+    width: 162px;
+    background: url(../../../assets/home/background_colonnes.png);
+}
+
+.decouverte__colonne-gauche {
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+.decouverte__colonne-droite {
+    position: relative;
+    top: 50px;
+    right: 200px;
+}
