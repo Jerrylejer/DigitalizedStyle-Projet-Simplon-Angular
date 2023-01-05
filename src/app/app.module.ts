@@ -18,6 +18,7 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
 import { OneProductComponent } from './pages/one-product/one-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProduitCardComponent } from './components/produit-card/produit-card.component';
+import { OneCategorieCardComponent } from './components/one-categorie-card/one-categorie-card.component';
 
 
 
@@ -35,6 +36,7 @@ import { ProduitCardComponent } from './components/produit-card/produit-card.com
     OneProductComponent,
     NotFoundComponent,
     ProduitCardComponent,
+    OneCategorieCardComponent,
   ],
   imports: [
     BrowserModule,
