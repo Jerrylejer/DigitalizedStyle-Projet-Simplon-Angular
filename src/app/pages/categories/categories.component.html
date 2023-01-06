@@ -1,13 +1,20 @@
 <section>
-<img class="barreViolette"
-     src="assets/hologram/hologram.jpg"
-     alt="barre Violette"/>
-<div class="contener">
-<app-produit-card *ngFor="let product of products" [product] = "product"></app-produit-card>
-</div>
-<img class="barreViolette"
-     src="assets/hologram/hologram.jpg"
-     alt="barre Violette"/>
-<div class="contenerEmpty"></div>
-
+  <img
+    class="barre-violette"
+    src="assets/hologram/hologram.jpg"
+    alt="barre Violette"
+  />
+  <div class="container">
+    <app-produit-card
+      *ngFor="let product of products"
+      [product]="product"
+    ></app-produit-card>
+  </div>
+  <img
+    class="barre-violette"
+    src="assets/hologram/hologram.jpg"
+    alt="barre Violette"
+  />
+  <div class="container-empty"></div>
+  <app-carrousel></app-carrousel>
 </section>
