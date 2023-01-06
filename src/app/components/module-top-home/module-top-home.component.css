@@ -1,10 +1,16 @@
 /*? SECTION DECOUVERTE */
-.decouverte {
+/* .decouverte {
     height: 100vh;
     width: min(100%, 90%);
     position: relative;
-    top: -300px;
+    top: -440px;
     margin: 0 auto 270px;
+} */
+
+.decouverte {
+    height: 100vh;
+    width: min(100%, 90%);
+    margin: -300px auto 270px;
 }
 
 .decouverte__container {
