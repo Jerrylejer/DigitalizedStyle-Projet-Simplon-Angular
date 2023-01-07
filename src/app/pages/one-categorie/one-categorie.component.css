@@ -5,9 +5,9 @@
     display: grid;
     place-items: center;
 }
-.barreViolette {
+.barre-violette {
    height: 100px;
 }
-.contenerEmpty {
+.contener-empty {
     height: 800px;
     }

@@ -73,18 +73,18 @@ export const PICTURE: Picture[] = [
    },
    {
       image: "assets/Doudounnes/doudounne4.jpg",
-      titre:"ROBES"
+      titre:"Speace-doudounne "
    },
    {
-      image: "assets/categorieFemme/bottes.jpg",
-      titre:"SOULIERS"
+      image: "assets/Doudounnes/doudounneWhite.jpg",
+      titre:"white coonext #657"
    },
    {
-      image: "assets/categorieFemme/top.jpg",
-      titre:"TOP ET T-SHIRT"
+      image: "assets/Doudounnes/doudounne5.jpg",
+      titre:"5G dudu"
    },
    {
-      image: "assets/categorieFemme/pantalon.png",
+      image: "assets/Doudounnes/doudounne3.png",
       titre:"PANTALONS"
    }
 ]
