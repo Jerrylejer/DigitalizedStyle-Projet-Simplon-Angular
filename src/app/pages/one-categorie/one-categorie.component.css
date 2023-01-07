@@ -1,13 +1,15 @@
-.contener {
-    height:15O0px;
+.container {
+    height:1250px;
     grid-template-columns: repeat( 3, 1fr);
     gap: 80px;
     display: grid;
     place-items: center;
 }
-.barreViolette {
+
+.barre-violette {
    height: 100px;
 }
-.contenerEmpty {
-    height: 800px;
-    }
+
+.container-empty {
+height: 800px;
+}
