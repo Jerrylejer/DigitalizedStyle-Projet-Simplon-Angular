@@ -41,97 +41,77 @@
 }
 
 /*? MEDIAQUERIES */
-@media screen and (max-width: 2200px) {
+/* @media screen and (max-width: 2200px) {
 
     .univers {
         margin-top: 700px;
     }
-}
+} */
 
 @media screen and (max-width: 2000px) {
 
     .univers {
-        margin-top: 650px;
+        margin-top: 400px;
     }
 }
 
 @media screen and (max-width: 1800px) {
 
     .univers {
-        margin-top: 580px;
+        margin-top: 300px;
     }
 }
 
 @media screen and (max-width: 1600px) {
-
     .univers {
-        margin-top: 440px;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    .univers {
-        margin-top: 400px;
+        margin-top: -100px;
     }
 }
 
 @media screen and (max-width: 1400px) {
 
     .univers {
-        margin-top: 360px;
+        margin-top: -150px;
     }
-}
 
-@media screen and (max-width: 1300px) {
-
-    .univers {
-        margin-top: 300px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-
-    .univers {
-        margin-top: 360px;
+    
+    .titres__sections {
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 1150px) {
 
     .univers {
-        margin-top: 330px;
+        margin-top: -250px;
     }
 }
 
 @media screen and (max-width: 1050px) {
 
     .univers {
-        margin-top: 300px;
+        margin-top: -300px;
     }
 }
 
 @media screen and (max-width: 992px) {
 
     .univers {
-        margin-top: -200px;
-    }
-
-    .titres__sections {
-        text-align: center;
+        margin-top: -400px;
     }
 }
 
 @media screen and (max-width: 868px) {
 
     .univers {
-        margin-top: -300px;
+        margin-top: -500px;
     }
 }
 
 @media screen and (max-width: 768px) {
 
     .univers {
-        margin-top: -400px;
+        margin-top: -620px;
     }
 
     .univers__card {
@@ -147,6 +127,6 @@
 @media screen and (max-width: 570px) {
 
     .univers {
-        margin-top: -550px;
+        margin-top: -700px;
     }
 }
