@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PICTURE, Picture } from 'src/app/mocks/product.mock';
 
 @Component({
   selector: 'app-product-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-
+  pictures: Picture[] = PICTURE;
 }
