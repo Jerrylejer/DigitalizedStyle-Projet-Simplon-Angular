@@ -1,10 +1,11 @@
 .container {
-    height:15O0px;
+    height:1250px;
     grid-template-columns: repeat( 3, 1fr);
     gap: 80px;
     display: grid;
     place-items: center;
 }
+
 .barre-violette {
    height: 100px;
 }
@@ -23,4 +24,3 @@ height: 800px;
     height: 400px;
     }
 }
-

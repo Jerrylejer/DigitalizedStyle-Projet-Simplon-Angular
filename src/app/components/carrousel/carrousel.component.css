@@ -1,0 +1,117 @@
+/*? SECTIONS NOUVEAUTES */
+.nouveautes {
+    height: auto;
+    margin-top: 150px;
+}
+
+.nouveautes h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    padding-left: 21px;
+}
+
+.nouveautes__container {
+    height: max(462px, 100%);
+    width: min(100%, 100%);
+    background: var(--color-purple);
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+.carrousel__responsive {
+    display: none;
+}
+
+/** Carrousel animation au click */
+.on {
+    display: block;
+    animation-name: opacity1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation sur apparition/disparition des témoignages */
+@keyframes opacity1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.off {
+    display: none;
+    animation-name: opacity0;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes opacity0 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.carrousel1,
+.carrousel2,
+.carrousel3 {
+    gap: 120px;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/*? MEDIAQUERIES */
+
+
+@media screen and (max-width: 1250px) {
+
+    .carrousel1,
+    .carrousel2,
+    .carrousel3 {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .carrousel__desktop {
+        display: none;
+    }
+
+    .carrousel__responsive {
+        display: block;
+    }
+
+    .carrousel {
+        justify-content: center;
+    }
+
+    .chevron__gauche {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .chevron__gauche i {
+        transform: rotate(90deg);
+        text-align: center;
+    }
+
+    .chevron__droit {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .chevron__droit i {
+        transform: rotate(90deg); 
+        text-align: center;
+    }
+}

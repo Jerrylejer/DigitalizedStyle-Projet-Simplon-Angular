@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { CompteClientComponent } from './pages/compte-client/compte-client.component';
+import { FavorisComponent } from './pages/favoris/favoris.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { OneCategorieComponent } from './pages/one-categorie/one-categorie.component';
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path:"categories/:id",
     component:OneCategorieComponent
+  },
+  {
+    path:"compte",
+    component:CompteClientComponent
+  },
+  {
+    path:"favoris",
+    component:FavorisComponent
   },
   {
     path:"products",
