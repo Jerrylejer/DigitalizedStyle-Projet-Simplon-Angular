@@ -1,6 +1,6 @@
-.contener {
+.container {
     height:15O0px;
-    grid-template-columns: repeat( 3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 80px;
     display: grid;
     place-items: center;
@@ -10,4 +10,17 @@
 }
 .contener-empty {
     height: 800px;
+    }
+    
+@media all and (max-width: 500px) { 
+    .container { 
+            display: inline-block;
+            text-align: center;
+        }
+    div {
+            padding-left: 80px;
+       }
+       .contener-empty {
+        height: 400px;
+        }
     }
