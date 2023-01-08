@@ -12,7 +12,8 @@
 .container-empty {
 height: 800px;
 }
-@media all and (max-width: 500px) { 
+
+@media screen and (max-width: 500px) { 
     .container { 
         display: inline-block;
         text-align: center;
@@ -23,3 +24,4 @@ height: 800px;
    .container-empty {
     height: 400px;
     }
+}
