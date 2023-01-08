@@ -1,4 +1,5 @@
 .container {
+
     height:1250px;
     grid-template-columns: repeat( 3, 1fr);
     gap: 80px;
@@ -12,6 +13,16 @@
 
 .container-empty {
 height: 800px;
+}
+@media all and (max-width: 500px) { 
+    .container { 
+        display: inline-block;
+        text-align: center;
+    }
+   div {
+        padding-left: 80px;
+   }
+   
 }
 
 
