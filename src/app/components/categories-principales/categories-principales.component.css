@@ -41,37 +41,10 @@
 }
 
 /*? MEDIAQUERIES */
-/* @media screen and (max-width: 2200px) {
+@media screen and (max-width: 1439px) {
 
     .univers {
-        margin-top: 700px;
-    }
-} */
-
-@media screen and (max-width: 2000px) {
-
-    .univers {
-        margin-top: 400px;
-    }
-}
-
-@media screen and (max-width: 1800px) {
-
-    .univers {
-        margin-top: 300px;
-    }
-}
-
-@media screen and (max-width: 1600px) {
-    .univers {
-        margin-top: -100px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-
-    .univers {
-        margin-top: -150px;
+        margin-top: 250px;
     }
 
     
@@ -80,38 +53,24 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1250px) {
 
     .univers {
-        margin-top: -250px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-
-    .univers {
-        margin-top: -300px;
+        margin-top: 150px;
     }
 }
 
 @media screen and (max-width: 992px) {
 
     .univers {
-        margin-top: -400px;
-    }
-}
-
-@media screen and (max-width: 868px) {
-
-    .univers {
-        margin-top: -500px;
+        margin-top: 0px;
     }
 }
 
 @media screen and (max-width: 768px) {
 
     .univers {
-        margin-top: -620px;
+        margin-top: -200px;
     }
 
     .univers__card {
@@ -127,6 +86,6 @@
 @media screen and (max-width: 570px) {
 
     .univers {
-        margin-top: -700px;
+        margin-top: -300px;
     }
 }

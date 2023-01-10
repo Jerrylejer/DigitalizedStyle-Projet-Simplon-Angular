@@ -5,6 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { PaiementComponent } from './pages/paiement/paiement.component';
+import { PanierComponent } from './components/panier/panier.component';
+import { OffrirComponent } from './components/offrir/offrir.component';
+import { LivraisonComponent } from './components/livraison/livraison.component';
+import { MoyenPaiementComponent } from './components/moyen-paiement/moyen-paiement.component';
 import { BarreMenuActionsComponent } from './components/barre-menu-actions/barre-menu-actions.component';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -29,13 +33,14 @@ import { ModuleTopHomeComponent } from './components/module-top-home/module-top-
 import { FavorisComponent } from './pages/favoris/favoris.component';
 import { CompteClientComponent } from './pages/compte-client/compte-client.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     PaiementComponent,
+    PanierComponent,
+    OffrirComponent,
+    LivraisonComponent,
+    MoyenPaiementComponent,
     BarreMenuActionsComponent,
     HeaderComponent,
     FooterComponent,
