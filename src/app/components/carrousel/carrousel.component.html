@@ -1,0 +1,180 @@
+<div class="container flex column">
+    <!-- DEBUT CARROUSEL PAR LOT DE 4 -->
+    <div class="nouveautes__container carrousel__desktop flex">
+        <div class="chevron__gauche">
+            <i class="fas fa-chevron-left" id="chevronG" #chevronG (click)="precedent()"></i>
+        </div>
+        <div class="off" id="carrousel1" #carrousel1 >
+            <div class="carrousel1 flex">
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel1.png"
+                        alt="mode1"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel2.png"
+                        alt="mode2"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel3.png"
+                        alt="mode3"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel4.png"
+                        alt="mode4"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="on flex" id="carrousel2" #carrousel2>
+            <div class="carrousel2 flex">
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel5.png"
+                        alt="mode5"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel6.png"
+                        alt="mode6"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel7.png"
+                        alt="mode7"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel8.png"
+                        alt="mode8"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="off flex" id="carrousel3" #carrousel3>
+            <div class="carrousel3 flex">
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel7.png"
+                        alt="mode9"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel8.png"
+                        alt="mode10"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel7.png"
+                        alt="mode11"
+                    />
+                </div>
+                <div class="nouveautes__items">
+                    <img
+                        src="../../../assets/carrousel/carrousel8.png"
+                        alt="mode12"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="chevron__droit" id="chevronD" #chevronD (click)="suivant()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <!-- FIN CARROUSEL PAR LOT DE 4  -->
+    <!-- DEBUT CARROUSEL RESPONSIVE IMAGE PAR IMAGE -->
+    <div class="nouveautes__container carrousel__responsive flex">
+        <div class="chevron__gauche" #chevronGauche (click)="slideG()">
+            <i class="fas fa-chevron-left" id="chevronGauche"></i>
+        </div>
+        <div id="carrousel">
+            <div class="carrousel flex">
+                <div class="off" id="image1" #image1>
+                    <img
+                        src="../../../assets/carrousel/carrousel1.png"
+                        alt="mode1"
+                    />
+                </div>
+                <div class="off" id="image2" #image2>
+                    <img
+                        src="../../../assets/carrousel/carrousel2.png"
+                        alt="mode2"
+                    />
+                </div>
+                <div class="off" id="image3" #image3>
+                    <img
+                        src="../../../assets/carrousel/carrousel3.png"
+                        alt="mode3"
+                    />
+                </div>
+                <div class="off" id="image4" #image4>
+                    <img
+                        src="../../../assets/carrousel/carrousel4.png"
+                        alt="mode4"
+                    />
+                </div>
+                <div class="off" id="image5" #image5>
+                    <img
+                        src="../../../assets/carrousel/carrousel5.png"
+                        alt="mode1"
+                    />
+                </div>
+                <div class="on flex" id="image6" #image6>
+                    <img
+                        src="../../../assets/carrousel/carrousel6.png"
+                        alt="mode2"
+                    />
+                </div>
+                <div class="off" id="image7" #image7>
+                    <img
+                        src="../../../assets/carrousel/carrousel7.png"
+                        alt="mode3"
+                    />
+                </div>
+                <div class="off" id="image8" #image8>
+                    <img
+                        src="../../../assets/carrousel/carrousel8.png"
+                        alt="mode4"
+                    />
+                </div>
+                <div class="off" id="image9" #image9>
+                    <img
+                        src="../../../assets/carrousel/carrousel7.png"
+                        alt="mode1"
+                    />
+                </div>
+                <div class="off" id="image10" #image10>
+                    <img
+                        src="../../../assets/carrousel/carrousel8.png"
+                        alt="mode2"
+                    />
+                </div>
+                <div class="off" id="image11" #image11>
+                    <img
+                        src="../../../assets/carrousel/carrousel7.png"
+                        alt="mode3"
+                    />
+                </div>
+                <div class="off" id="image12" #image12>
+                    <img
+                        src="../../../assets/carrousel/carrousel8.png"
+                        alt="mode4"
+                    />
+                </div>
+        </div>
+        <div class="chevron__droit" id="chevronDroit" #chevronDroit (click)="slideD()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <!-- FIN CARROUSEL RESPONSIVE IMAGE PAR IMAGE -->

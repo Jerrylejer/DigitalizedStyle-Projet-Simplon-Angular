@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+/** GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: min(100%, 100%);
+    display: block;
+}
+
+body {
+    background: #fff;
+}
+
+header,
+section,
+footer {
+    width: min(100%, 100%);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+ul li {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 30px 80px;
+    border: 7px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+.polygons {
+    width: 10px;
+}
+
+/*? PROPRIETES BOX*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-straight {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/*? MISE EN PLACE DES VARIABLES */
+:root {
+    --color-black: black;
+    --color-darkGray: #7a7070;
+    --color-white: #fff;
+    --color-grey: #f5f5f5;
+    --color-purple: #7e2bbb;
+}
