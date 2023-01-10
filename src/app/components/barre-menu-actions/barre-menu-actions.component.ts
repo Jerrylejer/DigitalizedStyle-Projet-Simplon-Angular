@@ -6,7 +6,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./barre-menu-actions.component.css'],
 })
 export class BarreMenuActionsComponent {
-
   // Mouchard sur les éléments HTML via @ViewChild
   // Container du burger
   @ViewChild('burger') burger: ElementRef | undefined;

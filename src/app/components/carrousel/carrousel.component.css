@@ -68,3 +68,50 @@
     font-size: 3rem;
     cursor: pointer;
 }
+
+/*? MEDIAQUERIES */
+
+
+@media screen and (max-width: 1250px) {
+
+    .carrousel1,
+    .carrousel2,
+    .carrousel3 {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .carrousel__desktop {
+        display: none;
+    }
+
+    .carrousel__responsive {
+        display: block;
+    }
+
+    .carrousel {
+        justify-content: center;
+    }
+
+    .chevron__gauche {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .chevron__gauche i {
+        transform: rotate(90deg);
+        text-align: center;
+    }
+
+    .chevron__droit {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .chevron__droit i {
+        transform: rotate(90deg); 
+        text-align: center;
+    }
+}

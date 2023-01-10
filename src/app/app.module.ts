@@ -26,6 +26,8 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { CategoriesPrincipalesComponent } from './components/categories-principales/categories-principales.component';
 import { ModuleTopHomeComponent } from './components/module-top-home/module-top-home.component';
+import { FavorisComponent } from './pages/favoris/favoris.component';
+import { CompteClientComponent } from './pages/compte-client/compte-client.component';
 
 
 
@@ -50,6 +52,8 @@ import { ModuleTopHomeComponent } from './components/module-top-home/module-top-
     NewsletterComponent,
     CategoriesPrincipalesComponent,
     ModuleTopHomeComponent,
+    FavorisComponent,
+    CompteClientComponent,
   ],
   imports: [
     BrowserModule,

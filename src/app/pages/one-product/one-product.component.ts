@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./one-product.component.css']
 })
 export class OneProductComponent {
- 
+  
 }

@@ -6,7 +6,7 @@ export interface Item {
    image: string;
    titre: string;
 }
-export interface Picture {
+export interface Doudounne {
    image: string;
    titre: string;
 }
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[]=[
       titre:"PANTALONS"
    }
 ]
-export const PICTURE: Picture[] = [
+export const DOUDOUNNES: Doudounne[] = [
    {
       image: "assets/Doudounnes/doudounne2.jpg",
       titre: "Digit-dunne 4.0"
@@ -73,18 +73,18 @@ export const PICTURE: Picture[] = [
    },
    {
       image: "assets/Doudounnes/doudounne4.jpg",
-      titre:"Speace-doudounne "
+      titre:"Space-dunne"
    },
    {
       image: "assets/Doudounnes/doudounneWhite.jpg",
-      titre:"white coonext #657"
+      titre:"White-numdunne 4.0"
    },
    {
       image: "assets/Doudounnes/doudounne5.jpg",
-      titre:"5G dudu"
+      titre:"Space connect"
    },
    {
       image: "assets/Doudounnes/doudounne3.png",
-      titre:"PANTALONS"
+      titre:"car-dunne connect"
    }
 ]
