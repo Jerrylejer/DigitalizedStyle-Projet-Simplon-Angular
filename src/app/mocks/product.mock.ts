@@ -6,7 +6,7 @@ export interface Item {
    image: string;
    titre: string;
 }
-export interface Picture {
+export interface Doudounne {
    image: string;
    titre: string;
 }
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[]=[
       titre:"PANTALONS"
    }
 ]
-export const PICTURE: Picture[] = [
+export const DOUDOUNNES: Doudounne[] = [
    {
       image: "assets/Doudounnes/doudounne2.jpg",
       titre: "Digit-dunne 4.0"
