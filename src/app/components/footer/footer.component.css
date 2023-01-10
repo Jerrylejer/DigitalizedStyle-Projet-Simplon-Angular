@@ -1,0 +1,53 @@
+.contenerBlack {
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.contenerBlack img {
+    width: 150px;
+    
+}
+.logoWhite {
+ 
+    margin-bottom: 40px;
+
+}
+.logos  {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+.logos img {
+    width: 32px;
+}
+h1, p {
+    color: var(--color-white);
+   
+}
+.petitStyle{
+    font-size: 20px;
+    color: var(--color-white);
+}
+.logoCop {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+   
+}
+.logoCop .copy {
+    width: 18px;
+}
+
+.navFooter a {
+    font-size: 24px;
+    color: var(--color-white);
+   
+}
+.navFooter {
+    display: flex;
+    gap: 20px;
+}
