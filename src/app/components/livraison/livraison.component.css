@@ -1,6 +1,19 @@
 .border {
-    border: 2px solid black;
+    border: 2px solid purple;
+    margin: 10px;
+    padding: 10px;
+    line-height: 25px;
+    
 }
+
+.priceMargin {
+    margin-bottom: 18px;
+}
+
+.mail {
+    
+}
+
 
 .livraison {
     display: flex;
