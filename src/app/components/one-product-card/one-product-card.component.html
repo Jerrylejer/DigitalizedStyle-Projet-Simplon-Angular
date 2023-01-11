@@ -1,4 +1,6 @@
 <article>
-    <img src = "{{item_productlist.image}}" alt = "{{item_productlist.titre}}"/>
-     <h2>{{item_productlist.titre}}</h2>
+    <a routerLink = "/products/product/{{ item_productlist.id }}">
+        <img src = "{{item_productlist.image}}" alt = "{{item_productlist.titre}}"/>
+    </a>
+     <h2><a routerLink = "/products/product/{{ item_productlist.id }}">{{item_productlist.titre}}</a></h2>
 </article>

@@ -35,12 +35,13 @@ const routes: Routes = [
     component:FavorisComponent
   },
   {
+    // Doudounes, robes, souliers, ...
     path:"products/:id",
     component:ProductListComponent
   },
   {
     // Une Doudoune
-    path:"products",
+    path:"products/product/:id",
     component:OneProductComponent
   },
   {
