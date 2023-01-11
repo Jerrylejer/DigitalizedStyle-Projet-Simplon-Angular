@@ -1,0 +1,26 @@
+p {
+    margin-bottom: 15px;
+}
+
+.carteTop {
+    display: flex;
+    gap: 15px;
+}
+
+.carteTop img  {
+    height: 54px;
+    margin-bottom: 30px;
+}
+
+.carteBottom {
+    display: flex;
+    gap: 15px;
+}
+
+.carteBottom img {
+    height: 54px;
+}
+
+button {
+    cursor: pointer;
+}

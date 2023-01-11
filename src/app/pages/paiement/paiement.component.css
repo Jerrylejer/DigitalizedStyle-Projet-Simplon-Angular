@@ -1,0 +1,7 @@
+section {
+    display: flex;
+}
+
+.moyenPaiement {
+    flex: 33%;
+}
