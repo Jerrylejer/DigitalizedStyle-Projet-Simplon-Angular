@@ -1,0 +1,32 @@
+/*? NEWSLETTER */
+.newsletter {
+    height: auto;
+    align-items: center;
+    /* margin-top: 100px; */
+    margin-bottom: 100px;
+}
+
+.newsletter h2 {
+    font-size: 3rem;
+    font-family: 'Nunito';
+    margin-bottom: 4rem;
+    padding-left: 21px;
+    text-align: center;
+    margin-top: 91px;
+}
+
+.input__newsletter {
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input__newsletter input {
+    height: 50px;
+    width: min(759px, 80%);
+    background: var(--color-grey);
+    border: none;
+    text-align: center;
+}
+
+

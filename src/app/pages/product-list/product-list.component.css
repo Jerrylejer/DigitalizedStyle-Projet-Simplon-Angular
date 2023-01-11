@@ -1,0 +1,26 @@
+.container {
+    height:1250px;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 80px;
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    margin-left: 30px;
+}
+.container-empty {
+height: 400px;
+}
+@media all and (max-width: 500px) { 
+    .container { 
+        display: inline-block;
+        text-align: center;
+    }
+   div {
+        padding-left: 80px;
+   }
+   .container-empty {
+    height: 400px;
+    }
+}

@@ -1,0 +1,11 @@
+<section>
+<h2>FEMME</h2>
+ <app-barre-violette></app-barre-violette>
+ <div class="container">
+    <app-one-categorie-card 
+    *ngFor="let item of items" [item] = "item" 
+    ></app-one-categorie-card></div>
+    <app-barre-violette></app-barre-violette>
+    <div class="container-empty"></div>
+</section>
+

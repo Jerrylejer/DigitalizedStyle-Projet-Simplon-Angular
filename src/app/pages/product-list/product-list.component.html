@@ -1,0 +1,12 @@
+<section>
+  <h2>DOUDOUNNES</h2>
+  <app-barre-violette></app-barre-violette>
+  <div class="container">
+    <app-one-product-card 
+      *ngFor="let item_productlist of item_productlists"
+      [item_productlist]="item_productlist "
+    ></app-one-product-card>
+  </div>
+  <app-barre-violette></app-barre-violette>
+  <div class="container-empty"></div>
+</section>
