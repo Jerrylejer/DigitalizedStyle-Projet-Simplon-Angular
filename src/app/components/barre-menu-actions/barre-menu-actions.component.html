@@ -43,8 +43,8 @@
     <h2><a [routerLink] = "['/categories', 1]">Femmes</a></h2>
     <ul class="nav__femmes">
       <li><a [routerLink] = "['/categories', 1]">Tous les articles</a></li>
+      <li><a [routerLink] = "['/not-found']">Masques & casques</a></li>
       <li class="responsive-off">
-        <!-- <a routerLink="/products">Doudounes</a> -->
         <a [routerLink] = "['/products', 2]">Doudounes</a>
       </li>
       <li class="responsive-off">
@@ -58,7 +58,7 @@
   <div class="enfants nav__list">
     <h2><a [routerLink] = "['/categories', 2]">Enfants</a></h2>
     <ul class="nav__enfants">
-      <li><a [routerLink] = "['/not-found']">Tous les vêtements</a></li>
+      <li><a [routerLink] = "['/not-found']">Tous les articles</a></li>
       <li class="responsive-off">
         <a [routerLink] = "['/not-found']">Hauts et tee-shirts</a>
       </li>
@@ -78,7 +78,6 @@
       <li class="responsive-off">
         <a [routerLink] = "['/not-found']">Bas et Pantalons</a>
       </li>
-      <li class="responsive-off"><a routerLink="/products">Combinaisons</a></li>
       <li><a [routerLink] = "['/not-found']">Chaussures</a></li>
     </ul>
   </div>

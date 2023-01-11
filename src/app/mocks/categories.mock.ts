@@ -9,17 +9,17 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
  {
     id: 1,
     image: "assets/categories/categoriesFemme.png",
-    titre: "FEMME"
+    titre: "FEMMES"
  }, 
  { 
     id: 2,
     image: "assets/categories/enfant.jpg",
-    titre: "ENFANT"
+    titre: "ENFANTS"
  },
  {  
     id: 3,
     image: "assets/categories/categoriesHomme.png",
-    titre: "HOMME"
+    titre: "HOMMES"
  }, 
  { 
     id: 4,
