@@ -62,6 +62,7 @@ import { BarreVioletteComponent } from './components/barre-violette/barre-violet
     CompteClientComponent,
     CategoriesCardComponent,
     BarreVioletteComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
 <article>
+    <img class="icone"
+          src = "{{item_categorie.icone}}" alt ="{{item_categorie.description}}"/>
   <a routerLink="/categories/{{ item_categorie.id }}"
-    ><img src="{{ item_categorie.image }}" alt="{{ item_categorie.titre }}"
+    ><img class="picture" src="{{ item_categorie.image }}" alt="{{ item_categorie.titre }}"
   /></a>
   <h2>
     <a routerLink="/categories/{{ item_categorie.id }}">{{
@@ -8,3 +10,4 @@
     }}</a>
   </h2>
 </article>
+

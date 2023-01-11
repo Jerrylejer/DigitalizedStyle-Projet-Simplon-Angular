@@ -6,3 +6,11 @@ h2 {
     font-size: 24px;
     margin-top: 19px;
 }
+.icone {
+    width: 48px;
+    height: auto;
+    position: absolute;
+    margin-left: 312px;
+    border-radius: 20%;
+    border: 1px solid ;
+}
