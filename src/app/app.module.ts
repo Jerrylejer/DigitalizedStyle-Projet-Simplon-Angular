@@ -33,6 +33,7 @@ import { BarreVioletteComponent } from './components/barre-violette/barre-violet
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +58,7 @@ import { BarreVioletteComponent } from './components/barre-violette/barre-violet
     CompteClientComponent,
     CategoriesCardComponent,
     BarreVioletteComponent,
+    
   ],
   imports: [
     BrowserModule,
