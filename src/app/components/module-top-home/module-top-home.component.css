@@ -2,7 +2,8 @@
 .decouverte {
     height: 100vh;
     width: min(100%, 90%);
-    margin: -400px auto 270px;
+    /* margin-bottom était 270px */
+    margin: -400px auto 0px;
 }
 
 .decouverte__container {
@@ -20,7 +21,8 @@
 
 .decouverte__image-accueil img {
     margin: 0 auto;
-    width: min(1500px, 80%);
+    /* avant 1500px */
+    width: min(80%, 80%);
 }
 
 .decouverte__image-legende {
@@ -49,7 +51,7 @@
 
 .decouverte__colonne-gauche,
 .decouverte__colonne-droite {
-    height: 1250px;
+    height: 850px;
     width: 162px;
     background: url(../../../assets/home/background_colonnes.png);
 }
@@ -68,49 +70,10 @@
 
 /*? MEDIAQUERIES */
 
-@media screen and (max-width: 2200px) {
-    .decouverte__colonne-gauche,
-    .decouverte__colonne-droite {
-        height: 1100px;
-        width: 152px;
-    }
-}
-@media screen and (max-width: 2000px) {
-    .decouverte__colonne-gauche,
-    .decouverte__colonne-droite {
-        height: 1000px;
-        width: 152px;
-    }
-}
-
-@media screen and (max-width: 1800px) {
-    .decouverte__colonne-gauche,
-    .decouverte__colonne-droite {
-        height: 900px;
-        width: 152px;
-    }
-}
-
-@media screen and (max-width: 1600px) {
-    .decouverte__colonne-gauche,
-    .decouverte__colonne-droite {
-        height: 800px;
-        width: 152px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1439px) {
     .decouverte__colonne-gauche,
     .decouverte__colonne-droite {
         height: 700px;
-        width: 152px;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .decouverte__colonne-gauche,
-    .decouverte__colonne-droite {
-        height: 600px;
         width: 152px;
     }
 }
