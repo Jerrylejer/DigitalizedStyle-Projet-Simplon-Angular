@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { Product, PRODUCTS } from 'src/app/mocks/product.mock';
+import { Item_categorie, ITEM_CATEGORIES } from 'src/app/mocks/categories.mock';
+
 
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.css']
+  styleUrls: ['./categories.component.css'],
 })
 export class CategoriesComponent {
-  products: Product[] = PRODUCTS;
+ item_categories: Item_categorie[] = ITEM_CATEGORIES;
 }

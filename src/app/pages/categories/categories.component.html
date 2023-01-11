@@ -1,20 +1,14 @@
 <section>
-  <img
-    class="barre-violette "
-    src="assets/hologram/hologram.jpg"
-    alt="barre Violette"
-  />
+  <h2>CATEGORIES</h2>
+  <app-barre-violette></app-barre-violette>
   <div class="container">
-    <app-produit-card
-      *ngFor="let product of products"
-      [product]="product"
-    ></app-produit-card>
+    <app-categories-card
+      *ngFor = "let item_categorie of item_categories"
+      [item_categorie]="item_categorie"
+    ></app-categories-card>
   </div>
-  <img
-    class="barre-violette"
-    src="assets/hologram/hologram.jpg"
-    alt="barre Violette"
-  />
+  <app-barre-violette></app-barre-violette>
+  
   <div class="container-empty"></div>
   <app-carrousel></app-carrousel>
   <div class="container-empty"></div>
