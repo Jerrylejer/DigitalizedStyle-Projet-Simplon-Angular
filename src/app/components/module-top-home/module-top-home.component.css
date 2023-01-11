@@ -3,7 +3,7 @@
     height: 100vh;
     width: min(100%, 90%);
     /* margin-bottom était 270px */
-    margin: -400px auto 0px;
+    margin: 0px auto;
 }
 
 .decouverte__container {
