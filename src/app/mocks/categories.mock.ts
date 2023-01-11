@@ -11,21 +11,21 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
  {
     id: 1,
     image: "assets/categories/categoriesFemme.png",
-    titre: "FEMME",
+    titre: "FEMMES",
     icone: "assets/wishlistCoeur/coeur1.png",
     description: "coeur"
  }, 
  { 
     id: 2,
     image: "assets/categories/enfant.jpg",
-    titre: "ENFANT",
+    titre: "ENFANTS",
     icone: "assets/wishlistCoeur/coeur1.png",
     description: "coeur"
  },
  {  
     id: 3,
     image: "assets/categories/categoriesHomme.png",
-    titre: "HOMME",
+    titre: "HOMMES",
     icone: "assets/wishlistCoeur/coeur1.png",
     description: "coeur"
  }, 

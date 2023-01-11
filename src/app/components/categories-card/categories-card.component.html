@@ -1,8 +1,13 @@
 <article>
     <img class="icone"
           src = "{{item_categorie.icone}}" alt ="{{item_categorie.description}}"/>
-     <img class="picture"
-     src = "{{item_categorie.image}}"alt ="{{item_categorie.titre}}"/>
-     <h2>{{item_categorie.titre}}</h2>
+  <a routerLink="/categories/{{ item_categorie.id }}"
+    ><img class="picture" src="{{ item_categorie.image }}" alt="{{ item_categorie.titre }}"
+  /></a>
+  <h2>
+    <a routerLink="/categories/{{ item_categorie.id }}">{{
+      item_categorie.titre
+    }}</a>
+  </h2>
 </article>
 

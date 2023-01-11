@@ -22,6 +22,7 @@ const routes: Routes = [
     component:CategoriesComponent
   },
   {
+    // Femmes, enfants, hommes, bijoux, accassoires, DS
     path:"categories/:id",
     component:OneCategorieComponent
   },
@@ -34,11 +35,13 @@ const routes: Routes = [
     component:FavorisComponent
   },
   {
-    path:"products",
+    // Doudounes, robes, souliers, ...
+    path:"products/:id",
     component:ProductListComponent
   },
   {
-    path:"products/:id",
+    // Une Doudoune
+    path:"products/product/:id",
     component:OneProductComponent
   },
   {

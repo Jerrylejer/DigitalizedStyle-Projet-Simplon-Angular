@@ -1,0 +1,9 @@
+.offrir {
+    border: 3px solid black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
