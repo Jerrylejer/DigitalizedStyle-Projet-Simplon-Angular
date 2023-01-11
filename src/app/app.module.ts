@@ -20,7 +20,7 @@ import { OneCategorieComponent } from './pages/one-categorie/one-categorie.compo
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { OneProductComponent } from './pages/one-product/one-product.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ProduitCardComponent } from './components/produit-card/produit-card.component';
+
 
 import { OneCategorieCardComponent } from './components/one-categorie-card/one-categorie-card.component';
 import { OneProductCardComponent } from './components/one-product-card/one-product-card.component';
@@ -31,6 +31,8 @@ import { CategoriesPrincipalesComponent } from './components/categories-principa
 import { ModuleTopHomeComponent } from './components/module-top-home/module-top-home.component';
 import { FavorisComponent } from './pages/favoris/favoris.component';
 import { CompteClientComponent } from './pages/compte-client/compte-client.component';
+import { CategoriesCardComponent } from './components/categories-card/categories-card.component';
+import { BarreVioletteComponent } from './components/barre-violette/barre-violette.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,7 @@ import { CompteClientComponent } from './pages/compte-client/compte-client.compo
     ProductListComponent,
     OneProductComponent,
     NotFoundComponent,
-    ProduitCardComponent,
+    
     OneCategorieCardComponent,
     OneProductCardComponent,
     CarrouselComponent,
@@ -58,6 +60,8 @@ import { CompteClientComponent } from './pages/compte-client/compte-client.compo
     ModuleTopHomeComponent,
     FavorisComponent,
     CompteClientComponent,
+    CategoriesCardComponent,
+    BarreVioletteComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,11 +6,11 @@
     place-items: center;
 }
 
-.barre-violette {
-   height: 100px;
+h2 {
+    margin-left: 30px;
 }
 .container-empty {
-height: 800px;
+height: 400px;
 }
 @media all and (max-width: 500px) { 
     .container { 

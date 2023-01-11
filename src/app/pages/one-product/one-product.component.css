@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    margin-top: 80px;
 }
 img {
     width: 300px;

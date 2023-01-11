@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { PICTURE, Picture } from 'src/app/mocks/product.mock';
+import { ITEMPRODUCTLISTS, Item_productlist } from 'src/app/mocks/product-list.mock';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  pictures: Picture[] = PICTURE;
+ item_productlists: Item_productlist[] = ITEMPRODUCTLISTS;
 }
