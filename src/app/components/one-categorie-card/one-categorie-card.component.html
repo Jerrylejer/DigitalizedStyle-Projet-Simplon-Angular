@@ -1,8 +1,7 @@
 <article>
-    <img class="icone"
-          src = "{{item.icone}}" alt ="{{item.description}}"/>
+  <input class="icone" type="image" onclick="onUp()" src= "{{item.icone}}" alt ="{{item.description}}"/>
   <a routerLink="/products/{{ item.id }}"
-    ><img src="{{ item.image }}" alt="{{ item.titre }}"
+    ><img src="{{ item.image }}" alt="{{ item.titre }}">
   /></a>
   <h2><a routerLink="/products/{{ item.id }}">{{ item.titre }}</a></h2>
 </article>
