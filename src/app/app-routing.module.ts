@@ -18,11 +18,12 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
+    // Page des catégories
     path:"categories",
     component:CategoriesComponent
   },
   {
-    // Femmes, enfants, hommes, bijoux, accassoires, DS
+    // Pour se diriger sur Femmes, enfants, hommes, bijoux, accassoires, DS
     path:"categories/:id",
     component:OneCategorieComponent
   },
@@ -35,12 +36,12 @@ const routes: Routes = [
     component:FavorisComponent
   },
   {
-    // Doudounes, robes, souliers, ...
+    // Pour se diriger sur les Doudounes
     path:"products/:id",
     component:ProductListComponent
   },
   {
-    // Une Doudoune
+    // Une Doudoune spécifique
     path:"products/product/:id",
     component:OneProductComponent
   },

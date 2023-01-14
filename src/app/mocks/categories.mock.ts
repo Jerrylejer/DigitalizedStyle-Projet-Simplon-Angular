@@ -4,7 +4,6 @@ export interface Item_categorie {
     titre: string;
     icone: string;
     description: string;
-    
 }
 
 export const ITEM_CATEGORIES: Item_categorie[]=[

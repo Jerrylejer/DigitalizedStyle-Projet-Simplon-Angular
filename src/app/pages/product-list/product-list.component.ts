@@ -7,5 +7,6 @@ import { ITEMPRODUCTLISTS, Item_productlist } from 'src/app/mocks/product-list.m
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
- item_productlists: Item_productlist[] = ITEMPRODUCTLISTS;
+  item_productlists: Item_productlist[] = ITEMPRODUCTLISTS;
+
 }

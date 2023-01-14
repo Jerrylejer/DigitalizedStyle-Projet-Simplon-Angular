@@ -9,6 +9,4 @@ import { Item_categorie } from 'src/app/mocks/categories.mock';
 })
 export class CategoriesCardComponent {
  @Input() item_categorie!: Item_categorie;
- 
-
 }
