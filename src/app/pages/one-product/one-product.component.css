@@ -1,5 +1,5 @@
 section {
-    margin-top: -250px;
+    margin-top: -175px;
 }
 
 .container {
@@ -10,7 +10,7 @@ img {
     width: 300px;
     border: 2px solid black;
 }
-.blockText {
+.block-text {
     display: block;
     border: 2px solid black;
     margin-left: 5px;

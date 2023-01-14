@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ITEMPRODUCTLISTS, Item_productlist } from 'src/app/mocks/product-list.mock';
 
-
+// Produits 
 @Component({
   selector: 'app-one-product',
   templateUrl: './one-product.component.html',

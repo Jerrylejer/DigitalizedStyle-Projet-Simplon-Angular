@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Item_categorie } from 'src/app/mocks/categories.mock';
 import { Item } from 'src/app/mocks/one-categorie.mock';
 
 
