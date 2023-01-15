@@ -1,11 +1,12 @@
 export interface Item {
-  id: number;
-  categorie: string;
-  image: string;
-  titre: string;
-  icone: string;
-  description: string;
+    id: number,
+    categorie: string,
+    image: string,
+    titre: string,
+    icone: string,
+    description: string
 }
+
 export const ITEMS: Item[] = [
   {
     id: 1,
@@ -54,5 +55,6 @@ export const ITEMS: Item[] = [
     titre: 'PANTALONS',
     icone: 'assets/wishlistCoeur/coeur1.png',
     description: 'coeur',
-  },
+  }, 
 ];
+
