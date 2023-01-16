@@ -31,6 +31,7 @@ export class OneCategorieComponent {
       // Je récupère en console les infos du titre de la catégorie
       console.log(this.item?.titre);
       // Je récupère en console les infos des titres des gammes de produits
+      // console.log(this.itemList?.items[1])
       console.log(this.itemList?.titre)
     }
 
