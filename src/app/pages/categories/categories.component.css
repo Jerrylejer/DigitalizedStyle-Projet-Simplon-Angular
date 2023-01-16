@@ -1,3 +1,8 @@
+
+section {
+    margin-top: -175px;
+}
+
 .container {
     height:1250px;
     grid-template-columns: repeat( 3, 1fr);
@@ -69,5 +74,15 @@ height: 400px;
    .container-empty {
     margin-top: 50px;
 }
+}
+@media all and (max-width: 500px) { 
+    .container { 
+        display: inline-block;
+        text-align: center;
+    }
+   div {
+        padding-left: 80px;
+   }
+   
 }
 

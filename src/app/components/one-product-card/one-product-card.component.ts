@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Item_productlist } from 'src/app/mocks/product-list.mock';
-
-
+import { Item_productdetails } from 'src/app/mocks/product-details.mock';
 
 @Component({
   selector: 'app-one-product-card',
@@ -9,6 +7,5 @@ import { Item_productlist } from 'src/app/mocks/product-list.mock';
   styleUrls: ['./one-product-card.component.css'],
 })
 export class OneProductCardComponent {
- @Input() item_productlist!: Item_productlist;
-
+  @Input() Item_productdetails!: Item_productdetails;
 }

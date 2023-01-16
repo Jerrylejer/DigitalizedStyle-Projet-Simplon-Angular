@@ -38,68 +38,69 @@
 </div>
 <!-- Navigation desktop en ligne puis à 992px navigation mobile en colonne-->
 <nav class="nav__desktop flex close" id="nav" #nav>
-  <div class="articles-du-moment nav__list">
-    <h2><a href="#">Articles</a></h2>
-    <ul class="nav__nouveautes">
-      <li>
-        <a routerLink="/categories">Toutes les catégories</a>
-      </li>
-      <li>
-        <a href="/categories.html" >Catégories principales</a>
-      </li>
-      <li class="responsive-off"><a href="#">Nouveauté</a></li>
-      <li>
-        <a href="#">Meilleures ventes</a>
+  <!-- Categories Femme pour tester le routeur -->
+  <div class="femmes nav__list">
+    <h2><a [routerLink] = "['/categories', 1]">Femmes</a></h2>
+    <ul class="nav__femmes">
+      <li><a [routerLink] = "['/not-found']">Masques & casques</a></li>
+      <li class="responsive-off">
+        <a [routerLink] = "['/products', 2]">Doudounes</a>
       </li>
       <li class="responsive-off">
-        <a href="#">Idées cadeaux</a>
+        <a [routerLink] = "['/not-found']">Robes</a>
       </li>
+      <li class="responsive-off"><a [routerLink] = "['/not-found']">Souliers</a></li>
+      <li><a [routerLink] = "['/not-found']">Top et t-shirt</a></li>
+      <li><a [routerLink] = "['/not-found']">Pantalons</a></li>
+      <li><a [routerLink] = "['/categories', 1]">Tous les articles</a></li>
+    </ul>
+  </div>
+  <div class="enfants nav__list">
+    <h2><a [routerLink] = "['/categories', 2]">Enfants</a></h2>
+    <ul class="nav__enfants">
+      <li class="responsive-off">
+        <a [routerLink] = "['/not-found']">Hauts et tee-shirts</a>
+      </li>
+      <li class="responsive-off">
+        <a [routerLink] = "['/not-found']">Bas et pantalons</a>
+      </li>
+      <li><a [routerLink] = "['/not-found']">Chaussures</a></li>
+      <li><a [routerLink] = "['/not-found']">Tous les articles</a></li>
     </ul>
   </div>
   <div class="hommes nav__list">
-    <h2><a href="#">Hommes</a></h2>
+    <h2><a [routerLink] = "['/categories', 3]">Hommes</a></h2>
     <ul class="nav__hommes">
-      <li><a href="#">Tous les vêtements</a></li>
       <li class="responsive-off">
-        <a href="#">Hauts et tee-shirts</a>
+        <a [routerLink] = "['/not-found']">Hauts et Tee-shirts</a>
       </li>
       <li class="responsive-off">
-        <a href="#">Bas et pantalons</a>
+        <a [routerLink] = "['/not-found']">Bas et Pantalons</a>
       </li>
-      <li class="responsive-off"><a href="#">Combinaisons</a></li>
-      <li><a href="#">Chaussures</a></li>
-    </ul>
-  </div>
-  <!-- Categories Femme pour tester le routeur -->
-  <div class="femmes nav__list">
-    <h2><a routerLink="/categories/:id">Femme</a></h2>
-    <ul class="nav__femmes">
-      <li><a routerLink="/products">Tous les articles</a></li>
-      <li class="responsive-off">
-        <a routerLink="/products">Hauts et Tee-shirts</a>
-      </li>
-      <li class="responsive-off">
-        <a routerLink="/products">Bas et Pantalons</a>
-      </li>
-      <li class="responsive-off"><a routerLink="/products">Combinaisons</a></li>
-      <li><a routerLink="/products">Chaussures</a></li>
+      <li><a [routerLink] = "['/not-found']">Chaussures</a></li>
+      <li><a [routerLink] = "['/not-found']">Tous les articles</a></li>
     </ul>
   </div>
   <!-- categorie Femme pour tester le routeur -->
   <div class="accessoires nav__list">
-    <h2><a href="#">Accessoires</a></h2>
+    <h2><a [routerLink] = "['/categories', 5]">Accessoires</a></h2>
     <ul class="nav__accessoires">
-      <li><a href="#">Accessoires Tech</a></li>
-      <li><a href="#">Accessoires fashion</a></li>
+      <li><a [routerLink] = "['/not-found']">Accessoires Tech</a></li>
+      <li><a [routerLink] = "['/not-found']">Accessoires fashion</a></li>
+      <li><a [routerLink] = "['/not-found']">Bijoux</a></li>
     </ul>
   </div>
   <div class="digitalized nav__list">
     <h2>
-      <a href="#">Digitalized<span>Style</span></a>
+      <a [routerLink] = "['/categories', 7]">Digitalized<span>Style</span></a>
     </h2>
     <ul class="nav__digitalized">
-      <li><a href="#">Adresse</a></li>
-      <li><a href="#">Contact</a></li>
+      <li class="responsive-off"><a [routerLink] = "['/not-found']">Nouveautés</a></li>
+      <li><a [routerLink] = "['/not-found']">Meilleures ventes</a></li>
+      <li class="responsive-off"><a [routerLink] = "['/not-found']">Idées cadeaux</a></li>
+      <li class="responsive-off"><a [routerLink] = "['/not-found']">Adresse</a></li>
+      <li><a [routerLink] = "['/not-found']">Contact</a></li>
+      <li><a [routerLink] = "['/categories']">Toutes les catégories</a></li>
     </ul>
   </div>
 </nav>
