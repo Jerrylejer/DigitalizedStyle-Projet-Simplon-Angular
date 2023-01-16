@@ -9,18 +9,60 @@ h2 {
     margin-left: 30px;
 }
 .container-empty {
-    height: 400px;
+height: 800px;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        margin-top: -470px;
     }
-    
-@media all and (max-width: 500px) { 
+    .container-empty {
+        height: 500px;
+        }
+}
+@media screen and (max-width: 768px) {
+    section {
+        margin-top: -470px;
+    }
     .container { 
-            display: inline-block;
-            text-align: center;
-        }
-    div {
-            padding-left: 80px;
+        display: inline-block;
        }
-       .contener-empty {
-        height: 400px;
-        }
+    div {
+        padding-left: 200px;
     }
+    h2 {
+        padding-left: 250px;
+    }
+}
+@media screen and (max-width: 570px) { 
+    section {
+        margin-top: -470px;
+    }
+    .container { 
+        display: inline-block;
+        text-align: center;
+    }
+    .container-empty {
+        height: 500px;
+        }
+   }
+@media screen and (max-width: 500px) { 
+    section {
+        margin-top: -470px;
+    }
+    .container { 
+        display: inline-block;
+        text-align: center;
+    }
+   div {
+        padding-left: 80px;
+   }
+   h2 {
+      padding-left: 150px;
+   }
+   .container-empty {
+    height: 300px;
+    }
+}
+
+

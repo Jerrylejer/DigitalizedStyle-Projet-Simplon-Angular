@@ -1,3 +1,5 @@
+
+
 .container {
     height:1250px;
     grid-template-columns: repeat( 3, 1fr);
@@ -13,6 +15,9 @@ h2 {
 height: 400px;
 }
 @media all and (max-width: 500px) { 
+    section {
+        margin-top: -470px;
+    }
     .container { 
         display: inline-block;
         text-align: center;
@@ -24,3 +29,4 @@ height: 400px;
     height: 400px;
     }
 }
+
