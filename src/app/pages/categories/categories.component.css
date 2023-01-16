@@ -1,8 +1,3 @@
-
-section {
-    margin-top: -250px;
-}
-
 .container {
     height:1250px;
     grid-template-columns: repeat( 3, 1fr);
@@ -11,38 +6,69 @@ section {
     place-items: center;
 }
 h2 {
-    margin-left: 30px;
+   margin-left: 30px;
 }
 .container-empty {
 height: 400px;
 }
-@media all and (max-width: 500px) { 
-    .container { 
-        display: inline-block;
-        text-align: center;
+@media screen and (max-width: 992px) {
+    section {
+        margin-top: -470px;
     }
-   div {
-        padding-left: 80px;
-   }
-   
+    .container-empty {
+        margin-top: 250px;
+    }
 }
-@media all and (max-width: 500px) { 
+@media screen and (max-width: 768px) {
+    section {
+        margin-top: -470px;
+    }
     .container { 
         display: inline-block;
         text-align: center;
+        margin-left: 100px;
     }
-   div {
-        padding-left: 80px;
-   }
-   
+    h2 {
+        padding-left: 180px;
+    }
+    div {
+        margin-left: 50px;
+    }
+    .container-empty {
+        margin-top: 300px;
+    }
 }
-
+@media screen and (max-width: 570px) { 
+    section {
+        margin-top: -470px;
+    }
+    .container { 
+        display: inline-block;
+        text-align: center;
+        margin-left: 90px;
+    }
+    .container-empty {
+        margin-top: 100px;
+    }
+    h2 {
+        padding-left: 200px;
+    }
+    .container-empty {
+        margin-top: 150px;
+    }
+   }
 @media all and (max-width: 500px) { 
+    section {
+        margin-top: -470px;
+    }
     .container { 
         display: inline-block;
         text-align: center;
     }
-   div {
-        padding-left: 80px;
+    h2 {
+        padding-left: 130px;
    }
+   .container-empty {
+    margin-top: 100px;
+}
 }
