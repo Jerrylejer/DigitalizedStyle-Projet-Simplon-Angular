@@ -1,3 +1,9 @@
+.mail {
+    margin: 18px, 18px;
+    margin-left: 180px;
+}
+
+
 .border {
     border: 2px solid purple;
     margin: 10px;
@@ -9,6 +15,7 @@
 .priceMargin {
     margin-bottom: 18px;
 }
+
 
 /* .mail {
     
@@ -25,4 +32,13 @@
 /* Formulaire, en cas d'erreur */
 .hasError {
     border: 3px solid red;
+}
+
+button {
+    font-size: 1rem;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    margin-top: 25px;
+    cursor: pointer;
 }

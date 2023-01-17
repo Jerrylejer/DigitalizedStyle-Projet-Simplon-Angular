@@ -26,7 +26,6 @@ h1 {
     border-radius: 10px;
     border: 3px solid var(--purple);
     gap: 10px;
-    margin-bottom: 150px;
 }
 
 .panier {
@@ -53,8 +52,39 @@ h1 {
 }
 
 .moyenPaiement {
+    display: flex;
+    flex-direction: column;
     flex: 33%;
     border: 3px solid var(--purple);
     border-radius: 10px;
+    
 
 }
+
+
+@media  (max-width: 768px) {
+    .sectionUn {
+        flex-direction: column;
+    }
+    
+    .sectionDeux {
+        flex-direction: column;
+    }
+    
+    .panier {
+        flex: 100%;
+    }
+    
+    .livraison {
+        flex: 100%;
+    }
+    
+    .offrir {
+        flex: 100%;
+    }
+    
+    .moyenPaiement {
+        flex: 100%;
+    }
+}
+    
