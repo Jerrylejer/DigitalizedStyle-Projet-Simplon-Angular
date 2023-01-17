@@ -33,6 +33,8 @@ import { FavorisComponent } from './pages/favoris/favoris.component';
 import { CompteClientComponent } from './pages/compte-client/compte-client.component';
 import { CategoriesCardComponent } from './components/categories-card/categories-card.component';
 import { BarreVioletteComponent } from './components/barre-violette/barre-violette.component';
+import { GalerieProduitComponent } from './components/galerie-produit/galerie-produit.component';
+import { ProductConfigComponent } from './components/product-config/product-config.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -63,6 +65,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CompteClientComponent,
     CategoriesCardComponent,
     BarreVioletteComponent,
+    GalerieProduitComponent,
+    ProductConfigComponent,
     
   ],
   imports: [

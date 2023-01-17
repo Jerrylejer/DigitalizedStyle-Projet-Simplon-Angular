@@ -17,9 +17,7 @@ img {
     padding-top: 30px;
     padding-left: 15px;
 }
-.container-empty {
-    height: 600px;
-    }
+
     @media all and (max-width: 900px) { 
         .container { 
                 display: inline-block;
@@ -56,9 +54,7 @@ img {
             display: inline-block;
             text-align: center;
         }
-        .container-empty {
-            height: 500px;
-            }
+        
        }
     @media screen and (max-width: 500px) { 
         .container { 
@@ -71,9 +67,7 @@ img {
        h2 {
           padding-left: 150px;
        }
-       .container-empty {
-        height: 300px;
-        }
+       
     }
     
     
