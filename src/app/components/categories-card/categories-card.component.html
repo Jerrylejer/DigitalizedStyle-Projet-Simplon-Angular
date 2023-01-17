@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<article>
-  <a routerLink = "/favoris">
-      <img class="icone"
-            src = "{{item_categorie.icone}}" 
-            alt ="{{item_categorie.description}}"></a>
-  <a routerLink="/categories/{{ item_categorie.id }}">
-    <img class="picture" 
-           src="{{ item_categorie.image }}" 
-           alt="{{ item_categorie.titre }}"></a>
-  <h2><a routerLink="/categories/{{ item_categorie.id }}">
-         {{item_categorie.titre}}</a></h2>
-=======
 <article *ngIf="item_categorie">
     <img class="icone"
           src = "{{item_categorie.icone}}" alt ="{{item_categorie.description}}"/>
@@ -22,6 +9,5 @@
       item_categorie.titre
     }}</a>
   </h2>
->>>>>>> b58497af9fc04cc94c69c6bb94cfd3fb896e2bcf
 </article>
 
