@@ -25,5 +25,55 @@ img {
                 display: inline-block;
                 text-align: center;
             }
-            
+    }
+    @media screen and (max-width: 992px) {
+        section {
+            margin-top: -470px;
         }
+        .container-empty {
+            height: 500px;
+            }
+    }
+    @media screen and (max-width: 768px) {
+        section {
+            margin-top: -470px;
+        }
+        .container { 
+            display: inline-block;
+           }
+        div {
+            padding-left: 200px;
+        }
+        h2 {
+            padding-left: 250px;
+        }
+    }
+    @media screen and (max-width: 570px) { 
+        section {
+            margin-top: -470px;
+        }
+        .container { 
+            display: inline-block;
+            text-align: center;
+        }
+        .container-empty {
+            height: 500px;
+            }
+       }
+    @media screen and (max-width: 500px) { 
+        .container { 
+            display: inline-block;
+            text-align: center;
+        }
+       div {
+            padding-left: 80px;
+       }
+       h2 {
+          padding-left: 150px;
+       }
+       .container-empty {
+        height: 300px;
+        }
+    }
+    
+    
