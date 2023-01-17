@@ -10,12 +10,19 @@
     margin-bottom: 18px;
 }
 
-.mail {
+/* .mail {
     
-}
+} */
 
 
 .livraison {
     display: flex;
     flex-direction: column;
+}
+
+
+
+/* Formulaire, en cas d'erreur */
+.hasError {
+    border: 3px solid red;
 }

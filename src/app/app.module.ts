@@ -33,6 +33,7 @@ import { FavorisComponent } from './pages/favoris/favoris.component';
 import { CompteClientComponent } from './pages/compte-client/compte-client.component';
 import { CategoriesCardComponent } from './components/categories-card/categories-card.component';
 import { BarreVioletteComponent } from './components/barre-violette/barre-violette.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,9 @@ import { BarreVioletteComponent } from './components/barre-violette/barre-violet
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

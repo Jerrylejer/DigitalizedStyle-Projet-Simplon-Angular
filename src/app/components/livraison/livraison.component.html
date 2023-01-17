@@ -24,19 +24,29 @@
         <option value="">Allemagne</option>
     </select>
 
+    <form [formGroup] = "formLivraison">
     <select class="border civilite">
         <option value="">Mme</option>
         <option value="">M</option>
     </select>
-    <label>Nom :</label>
-        <input type="text" />
-    <label>Prénom :</label>
-        <input type="text" />
-    <label>Adresse :</label>
-        <input type="text" />
-    <label>CP :</label>
-        <input type="text" />
-    <label>Ville :</label>
-        <input type="text" />
+    <label for = "nom">Nom :</label>    <!-- Voir TS -->
+        <input [class.hasError]="validationCoordonneesError.includes('nom')"    id="nom" formControlName="nom" type="text" />
+
+    <label for = "prenom">Prénom :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('prenom')"  type="text" />
+
+    <label for = "adresse">Adresse :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('adresse')"  type="text" />
+
+    <label for = "cp">CP :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('cp')"  type="text" />
+
+    <label for = "ville">Ville :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('ville')"  type="text" />
+
+        <!-- Créer un button -->
+        <button type="submit" (click)="register()">Enregistrer</button>
+
+    </form>
 
 </div>

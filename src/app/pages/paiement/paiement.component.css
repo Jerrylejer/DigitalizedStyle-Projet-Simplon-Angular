@@ -1,9 +1,19 @@
+/* VARIABLES */
+
+:root {
+    --purple: #7e2bbb;
+}
+
 /* GENERAL */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    color: var(--purple);
 }
 
 
@@ -14,7 +24,7 @@
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    border: 3px solid purple;
+    border: 3px solid var(--purple);
     gap: 10px;
     margin-bottom: 150px;
 }
@@ -38,13 +48,13 @@
 
 .offrir {
     flex: 66%;
-    border: 3px solid purple;
+    border: 3px solid var(--purple);
     border-radius: 10px;
 }
 
 .moyenPaiement {
     flex: 33%;
-    border: 3px solid purple;
+    border: 3px solid var(--purple);
     border-radius: 10px;
 
 }
