@@ -1,7 +1,17 @@
-<article>
-  <input class="icone" type="image" onclick="onUp()" src= "{{item.icone}}" alt ="{{item.description}}"/>
+<!-- <article>
+    <img class="icone"
+          src = "{{ item.items[2] }}" alt ="{{ item.items[3] }}"/>
   <a routerLink="/products/{{ item.id }}"
-    ><img src="{{ item.image }}" alt="{{ item.titre }}">
-  </a>
-  <h2><a routerLink="/products/{{ item.id }}">{{ item.titre }}</a></h2>
+    ><img src="{{ item.items[0] }}" alt="{{ item.items[1] }}"
+  /></a>
+  <h2><a routerLink="/products/{{ item.id }}">{{ item.items[1] }} a adapter selon categorie</a></h2>
+</article> -->
+
+<article>
+    <img class="icone"
+          src = "{{ item.icone }}" alt ="{{ item.description }}"/>
+  <a routerLink="/products/{{ item.id }}"
+    ><img src="{{ item.image }}" alt="{{ item.titre }}"
+  /></a>
+  <h2><a routerLink="/products/{{ item.id }}">{{ item.titre }} a adapter selon categorie</a></h2>
 </article>

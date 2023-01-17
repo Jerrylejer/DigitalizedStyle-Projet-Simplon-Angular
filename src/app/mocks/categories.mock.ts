@@ -4,7 +4,6 @@ export interface Item_categorie {
     titre: string;
     icone: string;
     description: string;
-    
 }
 
 export const ITEM_CATEGORIES: Item_categorie[]=[
@@ -49,6 +48,13 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
     titre: "NOUVEAUTES",
     icone: "assets/wishlistCoeur/coeur1.png",
     description: "coeur"
- }]
+ },
+ {
+   id: 7,
+   image: "",
+   titre: "DIGITALIZEDSTYLE",
+   icone: "",
+   description: ""
+}]
  
    

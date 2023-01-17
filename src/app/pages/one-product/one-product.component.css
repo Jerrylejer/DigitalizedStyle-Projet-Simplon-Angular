@@ -1,3 +1,7 @@
+section {
+    margin-top: -175px;
+}
+
 .container {
     display: flex;
     margin-top: 80px;
@@ -6,7 +10,7 @@ img {
     width: 300px;
     border: 2px solid black;
 }
-.blockText {
+.block-text {
     display: block;
     border: 2px solid black;
     margin-left: 5px;

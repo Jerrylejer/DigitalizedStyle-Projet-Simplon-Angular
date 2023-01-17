@@ -1,3 +1,8 @@
+
+section {
+    margin-top: -175px;
+}
+
 .container {
     height:1250px;
     grid-template-columns: repeat( 3, 1fr);
@@ -14,7 +19,7 @@ height: 800px;
 
 @media screen and (max-width: 992px) {
     section {
-        margin-top: -470px;
+        margin-top: -350px;
     }
     .container-empty {
         height: 500px;
@@ -47,6 +52,9 @@ height: 800px;
         }
    }
 @media screen and (max-width: 500px) { 
+    section {
+        margin-top: -470px;
+    }
     .container { 
         display: inline-block;
         text-align: center;

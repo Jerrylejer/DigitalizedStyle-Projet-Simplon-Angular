@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { ITEMPRODUCTLISTS, Item_productlist } from 'src/app/mocks/product-list.mock';
+import {
+  ITEMPRODUCTDETAILS,
+  Item_productdetails,
+} from 'src/app/mocks/product-details.mock';
 
 @Component({
   selector: 'app-product-list',
@@ -7,5 +10,5 @@ import { ITEMPRODUCTLISTS, Item_productlist } from 'src/app/mocks/product-list.m
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
- item_productlists: Item_productlist[] = ITEMPRODUCTLISTS;
+  item_productdetails: Item_productdetails[] = ITEMPRODUCTDETAILS;
 }

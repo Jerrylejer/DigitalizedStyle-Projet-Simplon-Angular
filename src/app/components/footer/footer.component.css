@@ -47,7 +47,7 @@ h1, p {
 .navFooter {
     display: flex;
     gap: 20px;
-} 
+}
 @media screen and (max-width: 1250px){
     .navFooter a {
         font-size: 18px;
@@ -91,6 +91,6 @@ h1, p {
         text-align: center;
     }
     .navFooter a {
-        font-size: 18px;
+        font-size: 16px;
     }
 }

@@ -1,4 +1,4 @@
-export interface Item_productlist {
+export interface Item_productdetails {
     id:    number;
     image: string;
     titre: string;
@@ -7,7 +7,7 @@ export interface Item_productlist {
     texte: string;
     prix: number
  }
- export const ITEMPRODUCTLISTS: Item_productlist[] = [
+ export const ITEMPRODUCTDETAILS: Item_productdetails[] = [
     {  
        id: 1,
        image: "assets/Doudounnes/doudounne2.jpg",
