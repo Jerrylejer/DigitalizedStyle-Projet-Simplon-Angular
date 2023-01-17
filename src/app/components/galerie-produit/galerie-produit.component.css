@@ -1,0 +1,18 @@
+.container {
+    height: 400px;
+    background: url(../../../assets/hologram/hologram.jpg);
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+li img{
+    width: 250px;
+    height: 250px;
+    margin-top: 80px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
