@@ -24,6 +24,7 @@ const routes: Routes = [
   },
   {
     // Pour se diriger sur Femmes, enfants, hommes, bijoux, accassoires, DS
+    // path:"categories/:id/products/:id",
     path:"categories/:id",
     component:OneCategorieComponent
   },

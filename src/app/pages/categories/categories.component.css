@@ -75,7 +75,9 @@ height: 400px;
     margin-top: 50px;
 }
 }
-@media all and (max-width: 500px) { 
+
+/* était celle avant le push de Liliana le 16 */
+/* @media all and (max-width: 500px) { 
     .container { 
         display: inline-block;
         text-align: center;
@@ -84,5 +86,5 @@ height: 400px;
         padding-left: 80px;
    }
    
-}
+} */
 
