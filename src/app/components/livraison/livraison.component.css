@@ -1,8 +1,54 @@
-.border {
-    border: 2px solid black;
+.mail {
+    margin: 18px, 18px;
+    margin-left: 180px;
 }
+
+
+.border {
+    border: 2px solid #7e2bbb;
+    margin: 10px;
+    padding: 10px;
+    line-height: 25px;
+    
+}
+
+.priceMargin {
+    margin-bottom: 18px;
+}
+
+
+/* .mail {
+    
+} */
+
 
 .livraison {
     display: flex;
     flex-direction: column;
+}
+
+
+
+/* Formulaire, en cas d'erreur */
+.hasError {
+    border: 3px solid red;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 25px;
+    cursor: pointer;
+    width: 50%;
+    
+}
+
+button:hover {
+    background-color: #7e2bbb;
+    color: white;
+
 }
