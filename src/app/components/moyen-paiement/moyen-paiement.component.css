@@ -44,6 +44,13 @@ button {
     margin-left: 20px;
     border-radius: 50px;
     margin-top: 25px;
-    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
 
+}
+
+button:hover {
+    background-color: #7e2bbb;
+    color: white;
 }
