@@ -1,14 +1,13 @@
-
 section {
     margin-top: -175px;
 }
-
 .container {
     height:1250px;
     grid-template-columns: repeat( 3, 1fr);
     gap: 80px;
     display: grid;
     place-items: center;
+    margin-top: -1px;
 }
 
 h2 {

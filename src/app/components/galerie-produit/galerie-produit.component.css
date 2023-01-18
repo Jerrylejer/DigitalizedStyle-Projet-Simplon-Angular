@@ -1,5 +1,5 @@
 .container {
-    height: 400px;
+    height: 500px;
     background: url(../../../assets/hologram/hologram.jpg);
     width: 85%;
     margin: 0 auto;
@@ -8,8 +8,7 @@
 
 li img{
     width: 250px;
-    height: 250px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 ul {
     display: flex;

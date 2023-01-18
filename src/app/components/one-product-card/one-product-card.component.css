@@ -1,10 +1,5 @@
 img {
     width: 350px; 
-    height: 490px;
-}
-h2 {
-    font-size: 24px;
-    margin-top: 19px;
 }
 .icone {
     width: 48px;
@@ -13,4 +8,19 @@ h2 {
     margin-left: 312px;
     border-radius: 20%;
     border: 1px solid ;
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    font-size: 14px;
+}
+
+.blocktext {
+display: flex;
+align-items: baseline;
+justify-content: space-around;
+margin-top: 20px;
+
+
 }

@@ -4,14 +4,16 @@ section {
 
 .container {
     display: flex;
+    justify-content: center;
     margin-top: 80px;
 }
 img {
-    width: 300px;
+    width: 460px;
     border: 2px solid black;
 }
 .block-text {
     display: block;
+    width: 80vh;
     border: 2px solid black;
     margin-left: 5px;
     padding-top: 30px;
