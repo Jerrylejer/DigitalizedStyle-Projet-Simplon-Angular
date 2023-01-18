@@ -10,17 +10,22 @@
 
 .div-haut {
     display: flex;
-
+}
+.button button {
+    width: 10px;
+    height: 10px;
 }
 
 .divCouleur .buttonRed {
 display: inline;
 background-color: aqua;
+
+
 margin:2px;
 cursor:pointer;
 
 }
-.divCouleur .buttonbleu {
+.divCouleur .buttonBleu {
 background-color: rgb(54, 12, 193);
 }
 
@@ -34,11 +39,7 @@ background-color: rgb(54, 12, 193);
 .divCouleur .buttonviolet {
     background-color: rgb(120, 6, 146);
 }
-.divTaille button {
-width:35%;
-height:25px;
-font-size: 14px;
-}
+
 .div-bas  {
     display: flex;
     justify-content: center;

@@ -19,7 +19,7 @@ export const ITEMS: Item[] = [
     items: [
       {
         id: 1,
-        image: 'assets/categorieFemme/casque.jpg',
+        image: 'assets/categorieFemme/casque.png',
         titre: 'MASQUES ET CASQUES',
         icone: 'assets/wishlistCoeur/coeur1.png',
         description: 'coeur',
@@ -27,7 +27,7 @@ export const ITEMS: Item[] = [
 
       {
         id: 2,
-        image: 'assets/Doudounnes/doudounneVerte.png',
+        image: 'assets/Doudounnes/doudounnesProduit/doudounne1.png',
         titre: 'DOUDOUNNES',
         icone: 'assets/wishlistCoeur/coeur1.png',
         description: 'coeur',
@@ -35,7 +35,7 @@ export const ITEMS: Item[] = [
 
       {
         id: 3,
-        image: 'assets/categorieFemme/robe.jpg',
+        image: 'assets/categorieFemme/robe.png',
         titre: 'ROBES',
         icone: 'assets/wishlistCoeur/coeur1.png',
         description: 'coeur',
@@ -43,7 +43,7 @@ export const ITEMS: Item[] = [
 
       {
         id: 4,
-        image: 'assets/categorieFemme/bottes.jpg',
+        image: 'assets/categorieFemme/bottes.png',
         titre: 'SOULIERS',
         icone: 'assets/wishlistCoeur/coeur1.png',
         description: 'coeur',
@@ -51,7 +51,7 @@ export const ITEMS: Item[] = [
 
       {
         id: 5,
-        image: 'assets/categorieFemme/top.jpg',
+        image: 'assets/categorieFemme/top.png',
         titre: 'TOP ET T-SHIRT',
         icone: 'assets/wishlistCoeur/coeur1.png',
         description: 'coeur',
@@ -59,7 +59,7 @@ export const ITEMS: Item[] = [
 
       {
         id: 6,
-        image: 'assets/categorieFemme/pantalon.png',
+        image: 'assets/categorieFemme/legins.png',
         titre: 'PANTALONS',
         icone: 'assets/wishlistCoeur/coeur1.png',
         description: 'coeur',
