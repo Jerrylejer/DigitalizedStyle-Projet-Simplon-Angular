@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Item_productdetails } from 'src/app/mocks/product-details.mock';
 
 @Component({
   selector: 'app-product-config',

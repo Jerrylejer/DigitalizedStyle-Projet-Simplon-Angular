@@ -1,9 +1,11 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {
   ITEMPRODUCTDETAILS,
   Item_productdetails,
 } from 'src/app/mocks/product-details.mock';
+import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 
 // Produits
 @Component({
@@ -14,8 +16,13 @@ import {
 export class OneProductComponent {
   items: Item_productdetails[] = ITEMPRODUCTDETAILS;
   item?: Item_productdetails;
+  quantity: number = 1;
+  addToCart: any = this.addToBasket();
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
+  constructor(
+    private activatedRoute: ActivatedRoute, 
+    private router: Router,
+    private basketService: BasketService) {}
 
   ngOnInit() {
     this.getProduct();
@@ -32,4 +39,13 @@ export class OneProductComponent {
       this.router.navigate(['/not-found']);
     }
   }
+
+  addToBasket() {
+    if(!this.item) return;
+    const basketProduct: BasketProduct = {
+      product: this.item,
+      quantity: this.quantity
+    }
+    this.basketService.addToBasket(basketProduct);
+ }
 }
