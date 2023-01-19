@@ -8,6 +8,10 @@ section {
     display: grid;
     place-items: center;
 }
+h2 {
+    font-size: 32px;
+    margin-left: 30px;
+ }
 
 .container-empty {
 height: 800px;

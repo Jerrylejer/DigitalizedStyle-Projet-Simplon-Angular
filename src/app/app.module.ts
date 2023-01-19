@@ -35,6 +35,8 @@ import { CategoriesCardComponent } from './components/categories-card/categories
 import { BarreVioletteComponent } from './components/barre-violette/barre-violette.component';
 import { GalerieProduitComponent } from './components/galerie-produit/galerie-produit.component';
 import { ProductConfigComponent } from './components/product-config/product-config.component';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -72,10 +74,13 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
+    MatSlideToggleModule,
     ReactiveFormsModule,
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

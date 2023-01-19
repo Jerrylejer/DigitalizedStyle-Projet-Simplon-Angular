@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-import {
-  ITEMPRODUCTDETAILS,
-  Item_productdetails,
+import { Component} from '@angular/core';
+import { ITEMPRODUCTDETAILS,Item_productdetails
 } from 'src/app/mocks/product-details.mock';
 
 @Component({
@@ -11,4 +9,5 @@ import {
 })
 export class ProductListComponent {
   item_productdetails: Item_productdetails[] = ITEMPRODUCTDETAILS;
+  titreToDisplay = 'DOUDOUNNES';
 }
