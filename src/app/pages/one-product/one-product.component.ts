@@ -14,8 +14,8 @@ import {
 export class OneProductComponent {
   items: Item_productdetails[] = ITEMPRODUCTDETAILS;
   item?: Item_productdetails;
-
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
+  
+constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.getProduct();
