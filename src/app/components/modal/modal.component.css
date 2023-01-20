@@ -1,0 +1,36 @@
+.container {
+    font-display: inline;
+    font-size: 46px;
+    }
+    h2 {
+    font-display: inline;
+    font-size: 38px;
+    color: var(--color-purple);
+    margin-top: 30px;
+    margin-left: 90px;
+    }
+    span {
+        font-size: 24px;
+        color: var(--color-purple);
+    }
+    .btnBlock {
+     display: flex;
+     justify-content: center;
+     margin-top:20px;  
+    }
+    p {
+        font-size: 28px;
+        margin-left: 130px;
+    }
+    button {
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px solid var(--color-purple);
+        gap: 10px;
+        background-color: white;
+    }
+    img {
+        width: 350px;
+        margin-left: 250px;
+        margin-top: 50px;
+    }

@@ -35,7 +35,9 @@ import { CategoriesCardComponent } from './components/categories-card/categories
 import { BarreVioletteComponent } from './components/barre-violette/barre-violette.component';
 import { GalerieProduitComponent } from './components/galerie-produit/galerie-produit.component';
 import { ProductConfigComponent } from './components/product-config/product-config.component';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+import { ModalComponent } from './components/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,12 +68,14 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     BarreVioletteComponent,
     GalerieProduitComponent,
     ProductConfigComponent,
+    ModalComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSlideToggleModule,
+    MatDialogModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

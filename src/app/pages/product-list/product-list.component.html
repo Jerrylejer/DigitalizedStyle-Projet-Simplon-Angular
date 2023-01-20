@@ -1,9 +1,14 @@
 <!--DOUDOUNNES-->
 <section>
-  <h2>{{titreToDisplay}}</h2>
+<h2>{{titreToDisplay}}</h2>
   <app-barre-violette></app-barre-violette>
+  <div>
+  <button class="modal" (click)="openDialogClick()">{{ btnText }}</button>
+  <button class="modal2" (click)="openDialogClick()">{{ btnText }}</button>
+  <button class="modal2" (click)="openDialogClick()">{{ btnText }}</button>
+</div>
   <div class="container">
-    <app-one-product-card 
+  <app-one-product-card 
       *ngFor="let item_productdetails of item_productdetails"
       [Item_productdetails]="item_productdetails "
     ></app-one-product-card>

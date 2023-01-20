@@ -4,8 +4,13 @@
   <!-- Je passe à one-categorie-card la liste des différentes gammes de produits -->
   <h2>{{ categorie?.categorie }}</h2>
   <app-barre-violette></app-barre-violette>
+  <div class="btnBlock">
+    <button class="modal" (click)="openDialogClick()">{{ btnText }}</button>
+    <button class="modal2" (click)="openDialogClick()">{{ btnText }}</button>
+    <button class="modal2" (click)="openDialogClick()">{{ btnText }}</button>
+  </div>
   <div class="container">
-    <app-one-categorie-card
+  <app-one-categorie-card
       *ngFor="let range of categorie?.items"
       [range]="range"
     ></app-one-categorie-card>
