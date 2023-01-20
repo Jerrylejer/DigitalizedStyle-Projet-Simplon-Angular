@@ -1,6 +1,6 @@
 <div class="border mail">
     <p>Saissisez votre adresse mail pour continuer en tant qu'invité(e) ou connectez-vous à votre compte :</p>
-    <p class="mail">@</p>
+    <input type="email">
 </div>
 
 <div class="border total">
@@ -30,25 +30,25 @@
         <option value="">M</option>
     </select>
     <br>
-    
-    <label for = "nom">Nom :</label>   <!-- Voir TS -->
+
+        <label for = "nom">Nom : </label>   
         <input [class.hasError]="validationCoordonneesError.includes('nom')"    id="nom" formControlName="nom" type="text" />
         <br>
 
-    <label for = "prenom">Prénom :</label>
-        <input [class.hasError]="validationCoordonneesError.includes('prenom')"  type="text" />
+    <label for = "prenom">Prénom : </label>
+        <input [class.hasError]="validationCoordonneesError.includes('prenom')"  id="prenom" formControlName="prenom"  type="text" />
         <br>
 
-    <label for = "adresse">Adresse :</label>
-        <input [class.hasError]="validationCoordonneesError.includes('adresse')"  type="text" />
+    <label for = "adresse">Adresse : </label>
+        <input [class.hasError]="validationCoordonneesError.includes('adresse')" id="adresse" formControlName="adresse" type="text" />
         <br>
 
-    <label for = "cp">CP :</label>
-        <input [class.hasError]="validationCoordonneesError.includes('cp')"  type="text" />
+    <label for = "cp">CP : </label>
+        <input [class.hasError]="validationCoordonneesError.includes('cp')" id="cp" formControlName="cp"  type="text" />
         <br>
 
-    <label for = "ville">Ville :</label>
-        <input [class.hasError]="validationCoordonneesError.includes('ville')"  type="text" />
+    <label for = "ville">Ville : </label>
+        <input [class.hasError]="validationCoordonneesError.includes('ville')"  id="ville" formControlName="ville"  type="text" />
         <br>
 
         <!-- Button -->

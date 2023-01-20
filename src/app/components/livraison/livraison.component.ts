@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LivraisonComponent {
   formLivraison!: FormGroup;
   validationCoordonneesError: string[] = [];
-  // formLivraison: any;
+  // formLivraison!: any;
   // validationPaymentError: string[] = [];
 
 
@@ -22,10 +22,8 @@ export class LivraisonComponent {
       nom: [null, [Validators.required]],
       prenom: [null, [Validators.required]],
       adresse: [null, [Validators.required]],
+      cp: [null, [Validators.required]],
       ville: [null, [Validators.required]],
-      codePostal: [null, [Validators.required]],
-      pays:[null, [Validators.required]],
-      telephone: [null, [Validators.required]],
     });
   }
 
@@ -41,34 +39,31 @@ export class LivraisonComponent {
       });
       console.log(this.validationCoordonneesError);
 
-    }// modale page succès else {
+    }
+    // modale page succès 
+    // else {
     //   this.router.navigate(['/paiementSucces']);
     // }
-
-    
-
-
-
-
   }
 
 }
 
-// Fonction Validation
 
-  // //  Fonction pour valider le paiement
-  //  pay(){
-  //   this.validationPaymentError = [];
-  //   if (this.paymentForm.invalid) {
-  //     Object.keys(this.paymentForm.controls).forEach((input) => {
-  //       const currentInput = this.paymentForm.get(input);
-  //       console.log("currentInput", currentInput);
-  //       if (currentInput && currentInput.status === "INVALID") {
-  //         this.validationPaymentError.push(input);
-  //       }
-  //     });
-  //   }
-  // }
+
+//  Fonction pour valider le paiement
+
+//    pay(){
+//     this.validationPaymentError = [];
+//     if (this.paymentForm.invalid) {
+//       Object.keys(this.paymentForm.controls).forEach((input) => {
+//         const currentInput = this.paymentForm.get(input);
+//         console.log("currentInput", currentInput);
+//         if (currentInput && currentInput.status === "INVALID") {
+//           this.validationPaymentError.push(input);
+//         }
+//       });
+//     }
+//   }
 // function pay() {
 //   throw new Error('Function not implemented.');
 // }
