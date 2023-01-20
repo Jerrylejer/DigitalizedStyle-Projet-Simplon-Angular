@@ -38,6 +38,7 @@ import { ProductConfigComponent } from './components/product-config/product-conf
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
     MatSlideToggleModule,
     ReactiveFormsModule,
+    MatDialogModule,
 
   ],
   providers: [],
