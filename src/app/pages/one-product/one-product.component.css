@@ -1,5 +1,7 @@
 section {
     margin-top: -175px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -12,6 +14,7 @@ img {
     width: 460px;
     border: 2px solid black;
 }
+
 .block-text {
     display: block;
     width: 80vh;
@@ -20,6 +23,7 @@ img {
     padding-top: 30px;
     padding-left: 15px;
 }
+
 
 
     @media all and (max-width: 900px) { 
@@ -31,47 +35,79 @@ img {
     @media screen and (max-width: 992px) {
         section {
             margin-top: -470px;
-        }
-        .container-empty {
-            height: 500px;
-            }
-    }
-    @media screen and (max-width: 768px) {
-        section {
-            margin-top: -470px;
-        }
-        .container { 
-            display: inline-block;
-           }
-        div {
-            padding-left: 200px;
-        }
-        h2 {
-            padding-left: 250px;
-        }
-    }
-    @media screen and (max-width: 570px) { 
-        section {
-            margin-top: -470px;
-        }
-        .container { 
+
+.button {
+    margin: 0 auto 80px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: url(../../../assets/hologram/hologram.jpg);
+}
+
+
+@media all and (max-width: 900px) { 
+    .container { 
             display: inline-block;
             text-align: center;
         }
-        
-       }
-    @media screen and (max-width: 500px) { 
-        .container { 
-            display: inline-block;
-            text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+         margin-top: -470px;
+    }
+
+    .container-empty {
+        height: 500px;
         }
-       div {
-            padding-left: 80px;
-       }
-       h2 {
-          padding-left: 150px;
-       }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+         margin-top: -470px;
+    }
+
+    .container { 
+        display: inline-block;
+        }
+
+    div {
+        padding-left: 200px;
+    }
+
+    h2 {
+        padding-left: 250px;
+     }
+}
+    
+@media screen and (max-width: 570px) { 
        
+    section {
+            margin-top: -470px;
+     }
+       
+    .container { 
+         display: inline-block;
+        text-align: center;
     }
+        
+}
+    
+@media screen and (max-width: 500px) { 
+        
+    .container { 
+         display: inline-block;
+        text-align: center;
+    }
+       
+    div {
+        padding-left: 80px;
+    }
+       
+    h2 {
+        padding-left: 150px;
+    }  
+ }
     
     

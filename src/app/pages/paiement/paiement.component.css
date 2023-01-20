@@ -1,7 +1,90 @@
-section {
+/* VARIABLES */
+
+:root {
+    --purple: #7e2bbb;
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--purple);
+}
+
+
+/* SECTION UNE */
+
+.sectionUn {
     display: flex;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px solid var(--purple);
+    gap: 10px;
+}
+
+.panier {
+    flex: 66%;
+}
+
+.livraison {
+    flex: 33%;
+}
+
+/* SECTION DEUX */
+
+.sectionDeux {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+}
+
+.offrir {
+    flex: 66%;
+    border: 3px solid var(--purple);
+    border-radius: 10px;
 }
 
 .moyenPaiement {
+    display: flex;
+    flex-direction: column;
     flex: 33%;
+    border: 3px solid var(--purple);
+    border-radius: 10px;
+    
+
 }
+
+
+@media  (max-width: 768px) {
+    .sectionUn {
+        flex-direction: column;
+    }
+    
+    .sectionDeux {
+        flex-direction: column;
+    }
+    
+    .panier {
+        flex: 100%;
+    }
+    
+    .livraison {
+        flex: 100%;
+    }
+    
+    .offrir {
+        flex: 100%;
+    }
+    
+    .moyenPaiement {
+        flex: 100%;
+    }
+}
+    

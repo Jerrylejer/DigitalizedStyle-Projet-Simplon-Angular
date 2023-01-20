@@ -38,6 +38,10 @@ import { ProductConfigComponent } from './components/product-config/product-conf
 
 import { ModalComponent } from './components/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,6 +78,9 @@ import { MatDialogModule } from '@angular/material/dialog';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule,
+
     MatDialogModule,
 
   ],

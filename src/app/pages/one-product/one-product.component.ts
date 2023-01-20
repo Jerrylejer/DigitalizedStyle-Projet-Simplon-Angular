@@ -4,6 +4,7 @@ import {
   ITEMPRODUCTDETAILS,
   Item_productdetails,
 } from 'src/app/mocks/product-details.mock';
+import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 
 // Produits
 @Component({
@@ -14,7 +15,12 @@ import {
 export class OneProductComponent {
   items: Item_productdetails[] = ITEMPRODUCTDETAILS;
   item?: Item_productdetails;
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
+  quantity: number = 1;
+ 
+  constructor(
+    private activatedRoute: ActivatedRoute, 
+    private router: Router,
+    private basketService: BasketService) {}
 
   ngOnInit() {
     this.getProduct();
@@ -27,8 +33,20 @@ export class OneProductComponent {
     const foundProduct = this.items.find((singleItem) => singleItem.id === id);
     if (foundProduct) {
       this.item = foundProduct;
+      console.log(foundProduct);
     } else {
       this.router.navigate(['/not-found']);
     }
   }
+
+  // Méthode pour ajouter le produit
+  addToBasket() {
+    if(!this.item) return;
+    const basketProduct: BasketProduct = {
+      product: this.item,
+      quantity: this.quantity
+    }
+    this.basketService.addProductToBasket(basketProduct);
+    console.log(basketProduct);
+ }
 }

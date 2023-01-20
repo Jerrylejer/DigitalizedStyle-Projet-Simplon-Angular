@@ -1,16 +1,17 @@
 <div class="border mail">
     <p>Saissisez votre adresse mail pour continuer en tant qu'invité(e) ou connectez-vous à votre compte :</p>
+    <p class="mail">@</p>
 </div>
 
 <div class="border total">
     <p>Sous-total</p>
-    <p>0,00 €</p>
+    <p class="priceMargin">0,00 €</p>
 
     <p>Livraison</p>
-    <p>0,00 €</p>
+    <p class="priceMargin">0,00 €</p>
 
     <p>Montant total</p>
-    <p>0,00 €</p>
+    <p class="priceMargin">0,00 €</p>
 </div>
 
 <div class="border livraison">
@@ -23,19 +24,36 @@
         <option value="">Allemagne</option>
     </select>
 
+    <form [formGroup] = "formLivraison">
     <select class="border civilite">
         <option value="">Mme</option>
         <option value="">M</option>
     </select>
-    <label>Nom :</label>
-        <input type="text" />
-    <label>Prénom :</label>
-        <input type="text" />
-    <label>Adresse :</label>
-        <input type="text" />
-    <label>CP :</label>
-        <input type="text" />
-    <label>Ville :</label>
-        <input type="text" />
+    <br>
+    
+    <label for = "nom">Nom :</label>   <!-- Voir TS -->
+        <input [class.hasError]="validationCoordonneesError.includes('nom')"    id="nom" formControlName="nom" type="text" />
+        <br>
+
+    <label for = "prenom">Prénom :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('prenom')"  type="text" />
+        <br>
+
+    <label for = "adresse">Adresse :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('adresse')"  type="text" />
+        <br>
+
+    <label for = "cp">CP :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('cp')"  type="text" />
+        <br>
+
+    <label for = "ville">Ville :</label>
+        <input [class.hasError]="validationCoordonneesError.includes('ville')"  type="text" />
+        <br>
+
+        <!-- Button -->
+        <button type="submit" (click)="register()">Enregistrer</button>
+
+    </form>
 
 </div>
