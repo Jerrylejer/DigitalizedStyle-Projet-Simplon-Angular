@@ -24,6 +24,18 @@ img {
     padding-left: 15px;
 }
 
+
+
+    @media all and (max-width: 900px) { 
+        .container { 
+                display: inline-block;
+                text-align: center;
+            }
+    }
+    @media screen and (max-width: 992px) {
+        section {
+            margin-top: -470px;
+
 .button {
     margin: 0 auto 80px;
 }

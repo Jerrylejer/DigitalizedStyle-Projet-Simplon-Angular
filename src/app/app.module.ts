@@ -36,6 +36,8 @@ import { BarreVioletteComponent } from './components/barre-violette/barre-violet
 import { GalerieProduitComponent } from './components/galerie-produit/galerie-produit.component';
 import { ProductConfigComponent } from './components/product-config/product-config.component';
 
+import { ModalComponent } from './components/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -70,14 +72,15 @@ import { MatDialogModule } from '@angular/material/dialog';
     BarreVioletteComponent,
     GalerieProduitComponent,
     ProductConfigComponent,
+    ModalComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     MatSlideToggleModule,
     ReactiveFormsModule,
+
     MatDialogModule,
 
   ],

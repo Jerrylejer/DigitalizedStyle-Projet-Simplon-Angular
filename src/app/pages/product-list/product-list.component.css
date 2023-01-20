@@ -17,6 +17,36 @@ h2 {
 .container-empty {
 height: 400px;
 }
+.modal {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    margin-left: 90px;
+    font-size: 24px;
+    color:var(--color-purple);
+    text-align: center;
+    padding: 5px;
+}
+.modal2 {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    margin-left: 270px;
+    font-size: 24px;
+    color:var(--color-purple);
+    text-align: center;
+    padding: 5px;
+}
+.modal3 {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    margin-left: -450px;
+    color:var(--color-purple);
+    text-align: center;
+    padding: 5px;
+}
+
 @media screen and (max-width: 992px) {
     section {
         margin-top: -350px;
