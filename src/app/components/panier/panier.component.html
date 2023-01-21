@@ -12,6 +12,7 @@
               <p><strong>Article: </strong>{{basketProduct.product.titre}}</p>
               <p><strong>Détails: </strong>{{basketProduct.product.texte}}</p>
               <p><strong>Total d'achat article: </strong>{{basketProduct.product.prix}} €</p>
+              <button (click)="removeProduct(index)">Supprimer</button>
               <br>
             </article>
           </li>
