@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastService } from 'angular-toastify';
 import {
   ITEMPRODUCTDETAILS,
   Item_productdetails,
@@ -20,7 +21,12 @@ export class OneProductComponent {
   constructor(
     private activatedRoute: ActivatedRoute, 
     private router: Router,
-    private basketService: BasketService) {}
+    private basketService: BasketService,
+    private _toastService: ToastService) {}
+
+  addInfoToast() {
+    this._toastService.info("L'article est ajouté à votre panier");
+  }
 
   ngOnInit() {
     this.getProduct();

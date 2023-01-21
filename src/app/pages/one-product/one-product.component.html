@@ -1,7 +1,6 @@
 <section>
     <app-barre-violette></app-barre-violette>
     <div class="container">
-        
         <img src= {{item?.image}}>
         <div class="block-text">
             <h2>{{item?.titre}}</h2>
@@ -12,8 +11,9 @@
     </div>
     <app-galerie-produit></app-galerie-produit>
     <app-product-config></app-product-config>
+    <lib-toastify-toast-container [autoClose]=3000></lib-toastify-toast-container>
     <div class="button">
-        <button type="submit" (click)="addToBasket()"> AddToCart </button>
+        <button type="submit" (click)="addToBasket()" (click)="addInfoToast()"> AddToCart </button>
     </div>
 </section>
 
