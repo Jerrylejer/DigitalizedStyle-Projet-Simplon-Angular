@@ -30,6 +30,11 @@
 
 
 /* Formulaire, en cas d'erreur */
+
+input {
+    border: transparent;
+    border-bottom: 1px solid #7e2bbb;
+}
 .hasError {
     border: 3px solid red;
 }
