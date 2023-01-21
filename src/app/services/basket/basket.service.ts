@@ -65,14 +65,14 @@ export class BasketService {
   }
 
   // Cette fonction retire le produit du panier
-  //! Il faudra créer un bouton dans le panier.html pour supprimer le produit et le binder (click) = "removeProduct()"
-  //! Je récupère l'index avec une ngFor => index généré dans le html (index de liste, rien à voir avec les mocks)
+  // Il faudra créer un bouton dans le panier.html pour supprimer le produit et le binder (click) = "removeProduct()"
+  // Je récupère l'index avec une ngFor => index généré dans le html (index de liste, rien à voir avec les mocks)
   removeProductFromBasket(index: number) {
     // Je récupère mon panier de base
     const basket = this.getBasket();
-    //! Je supprime le produit dont l'index est renseigné en argument 
+    // Je supprime le produit dont l'index est renseigné en argument 
     basket.splice(index, 1);
-    // ! Voir pour faire une méthode afin d'enregistrer le panier
+    //! Voir pour faire une méthode afin d'enregistrer le panier
     localStorage.setItem('basket', JSON.stringify(basket));
   }
 
@@ -84,12 +84,12 @@ export class BasketService {
     // Calcul du prix total
     const total = basket.reduce((accumulator: number, currentValue: BasketProduct) => {
       // Id du produit dans mon mock
-      const productId = this.productsService.getProduct(currentValue.product.id);
-      console.log(productId);
-      // Si le produit n'existe pas, je retourne la valeur de l'accumulateur*
-      if(!productId) return accumulator;
+      const product = this.productsService.getProduct(currentValue.product.id);
+      console.log(product!);
+      // Si le produit n'existe pas, je retourne la valeur de l'accumulateur, c'est à dire 0
+      if(!product) return accumulator;
       // Si existe
-      return accumulator + (currentValue.quantity * productId.prix);
+      return accumulator + (currentValue.quantity * product.prix);
     }, 0)
     // Je retourne la valeur Totale à la variable totalPrice
     this.totalPrice = total;
@@ -111,9 +111,9 @@ export class BasketService {
   }
 
   // Initialisation du panier à l'ouverture de l'app
-  iniBasket() {
+  initBasket() {
     this.getBasket();
-    this.getTotalPrice;
-    this.getTotalQuantity
+    this.getTotalPrice();
+    this.getTotalQuantity();
   }
 }

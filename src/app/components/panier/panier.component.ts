@@ -9,8 +9,7 @@ import { BasketProduct, BasketService } from 'src/app/services/basket/basket.ser
 export class PanierComponent {
 basket: BasketProduct[] = [];
 
-constructor(
-  private basketService: BasketService){}
+constructor(public basketService: BasketService){}
 
 ngOnInit() {
   this.basket = this.basketService.getBasket();
