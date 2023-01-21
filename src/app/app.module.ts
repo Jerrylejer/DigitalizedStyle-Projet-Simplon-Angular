@@ -88,14 +88,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
 
     MatDialogModule,
-  
-    
-    
-    
-
-    
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]
