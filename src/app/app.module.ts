@@ -76,6 +76,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     GalerieProduitComponent,
     ProductConfigComponent,
     ModalComponent,
+
     
     
   ],

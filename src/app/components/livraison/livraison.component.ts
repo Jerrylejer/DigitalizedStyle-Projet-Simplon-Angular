@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-livraison',
   templateUrl: './livraison.component.html',
-  styleUrls: ['./livraison.component.css']
+  styleUrls: ['./livraison.component.css'],
+  
 })
 export class LivraisonComponent {
   formLivraison!: FormGroup;
@@ -18,6 +19,8 @@ export class LivraisonComponent {
 
   constructor(private formBuilder: FormBuilder, private router: Router) {};
   ngOnInit(){
+
+
     this.formLivraison = this.formBuilder.group({
       nom: [null, [Validators.required]],
       prenom: [null, [Validators.required]],
