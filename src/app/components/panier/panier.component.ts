@@ -15,4 +15,15 @@ constructor(
 ngOnInit() {
   this.basket = this.basketService.getBasket();
 }
+
+getBasket() {
+  this.basket = this.basketService.getBasket();
+}
+
+removeProduct(index: number) {
+  this.basketService.removeProductFromBasket(index);
+  this.getBasket();
+}
+
+
 }
