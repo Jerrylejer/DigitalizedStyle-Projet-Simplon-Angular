@@ -37,7 +37,7 @@
   </div>
 </div>
 <!-- Navigation desktop en ligne puis à 992px navigation mobile en colonne-->
-<nav class="nav__desktop flex close" id="nav" #nav>
+<nav class="nav__desktop flex close" id="nav" #nav (click)="burgerSwitch()">
   <!-- Categories Femme pour tester le routeur -->
   <div class="femmes nav__list">
     <h2><a [routerLink] = "['/categories', 1]">Femmes</a></h2>

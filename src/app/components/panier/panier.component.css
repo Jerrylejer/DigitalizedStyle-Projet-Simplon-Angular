@@ -1,18 +1,21 @@
 section {
     display: flex;
     gap: 100px;
+   
 }
 
 img {
-    width: min(40%, 40%);
-    height: min(40%, 40%);
+    width: 20%;
 }
 
 .caracteristique {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+}
+
+.caracteristique ul li p {
+    font-family: 'Nunito', sans-serif;  
 }
 
 .livraison {
