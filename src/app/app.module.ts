@@ -73,6 +73,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GalerieProduitComponent,
     ProductConfigComponent,
     ModalComponent,
+
     
     
   ],
@@ -84,14 +85,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
 
     MatDialogModule,
-  
-    
-    
-    
-
-    
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

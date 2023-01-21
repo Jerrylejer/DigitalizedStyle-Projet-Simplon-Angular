@@ -18,42 +18,41 @@
     <h3>Livraison</h3>
     <select class="country">
         <option value="">France</option>
-        <option value="">Suisse</option>
+        <option value="">Allemagne</option>
         <option value="">Belgique</option>
         <option value="">Luxembourg</option>
-        <option value="">Allemagne</option>
+        <option value="">Suisse</option>
     </select>
 
     <form [formGroup] = "formLivraison">
     <select class="border civilite">
-        <option value="">Mme</option>
-        <option value="">M</option>
+        <option value="">Mme </option>
+        <option value="">M </option>
     </select>
     <br>
 
         <label for = "nom">Nom : </label>   
-        <input [class.hasError]="validationCoordonneesError.includes('nom')"    id="nom" formControlName="nom" type="text" />
+        <input [class.formError]="validationCoordonneesError.includes('nom')" id="nom" formControlName="nom" type="text" />
         <br>
 
     <label for = "prenom">Prénom : </label>
-        <input [class.hasError]="validationCoordonneesError.includes('prenom')"  id="prenom" formControlName="prenom"  type="text" />
+        <input [class.formError]="validationCoordonneesError.includes('prenom')" id="prenom" formControlName="prenom"  type="text" />
         <br>
 
     <label for = "adresse">Adresse : </label>
-        <input [class.hasError]="validationCoordonneesError.includes('adresse')" id="adresse" formControlName="adresse" type="text" />
+        <input [class.formError]="validationCoordonneesError.includes('adresse')" id="adresse" formControlName="adresse" type="text" />
         <br>
 
     <label for = "cp">CP : </label>
-        <input [class.hasError]="validationCoordonneesError.includes('cp')" id="cp" formControlName="cp"  type="text" />
+        <input [class.formError]="validationCoordonneesError.includes('cp')" id="cp" formControlName="cp"  type="text" />
         <br>
 
     <label for = "ville">Ville : </label>
-        <input [class.hasError]="validationCoordonneesError.includes('ville')"  id="ville" formControlName="ville"  type="text" />
+        <input [class.formError]="validationCoordonneesError.includes('ville')" id="ville" formControlName="ville"  type="text" />
         <br>
 
         <!-- Button -->
         <button type="submit" (click)="register()">Enregistrer</button>
-
     </form>
 
 </div>
