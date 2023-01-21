@@ -1,6 +1,5 @@
-<h1>Mon panier</h1>
-  <section>
-    <div class="caracteristique">
+<section>
+  <div class="caracteristique">
       <ul>
           <li *ngFor="let basketProduct of basket; let index = index">
             <article>
@@ -21,6 +20,7 @@
   </section>
   <br>
   <p><strong>Total de mes achats</strong> :{{this.basketService.totalPrice}} €</p>
+  <p><strong>Total des articles</strong> :{{this.basketService.productQuantity}}</p>
   
 
 
