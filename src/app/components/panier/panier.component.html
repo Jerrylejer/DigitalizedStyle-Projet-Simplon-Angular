@@ -1,42 +1,20 @@
 <h1>Mon panier</h1>
-<!-- <div *ngIf="Panier.length > 0">
-  <table>
-    <tr>
-      <th>Produit</th>
-      <th>Prix</th>
-      <th>Quantité</th>
-      <th>Total</th>
-    </tr>
-    <tr *ngFor="let produit of panier">
-      <td>{{produit.nom}}</td>
-      <td>{{produit.prix}}</td>
-      <td>{{produit.quantite}}</td>
-      <td>{{produit.prix * produit.quantite}}</td>
-    </tr>
-  </table> -->
-<section>
-  <img src="./assets/Doudounnes/doudounneVerte.png" alt="">
+  <section>
+    <div class="caracteristique">
+      <ul>
+          <li *ngFor="let basketProduct of basket; let index = index">
+            <article>
+              <img src = "{{basketProduct.product.image}}" alt = "{{basketProduct.product.titre}}"/>
+              <p>Quantité: {{basketProduct.quantity}}</p>
+              <p>Prix unitaire: {{basketProduct.product.prix}} €</p>
+              <p>Produit: {{basketProduct.product.titre}}</p>
+              <p>caracteristiques: {{basketProduct.product.texte}}</p>
+              <!-- <h3>{{basketProduct.quantity}} x {{basketProduct.produit} - {{basketProduct.prix}</h3> -->
+            </article>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <p>Prix total : </p>
 
-  <div class="caracteristique">
-    <ul>
-        <li>Modèle : Doudounne Digit-doudounne</li>
-        <li>Taille : 42 </li>
-        <li>Couleur : Meta-vert</li>
-        <li>Quantité :
-            <select>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-            </select>
-
-            </li>
-        <li>Total : 2 500 €</li>
-    </ul>
-
-  </div>
-</section>
-
-  <p class="livraison">Livraison estimée : Mercredi 1er février 2023</p>
 

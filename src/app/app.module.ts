@@ -38,6 +38,7 @@ import { ProductConfigComponent } from './components/product-config/product-conf
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -74,9 +75,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     MatSlideToggleModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],

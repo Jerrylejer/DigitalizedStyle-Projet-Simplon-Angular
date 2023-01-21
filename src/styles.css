@@ -80,3 +80,6 @@ button {
     --color-grey: #f5f5f5;
     --color-purple: #7e2bbb;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
