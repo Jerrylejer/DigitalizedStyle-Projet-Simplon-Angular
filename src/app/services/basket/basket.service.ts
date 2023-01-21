@@ -74,6 +74,9 @@ export class BasketService {
     basket.splice(index, 1);
     //! Voir pour faire une méthode afin d'enregistrer le panier
     localStorage.setItem('basket', JSON.stringify(basket));
+    // Je recalcule le total en prix et en quantité
+    this.getTotalPrice();
+    this.getTotalQuantity();
   }
 
   // Cette fonction calcule le prix total du panier
@@ -85,7 +88,7 @@ export class BasketService {
     const total = basket.reduce((accumulator: number, currentValue: BasketProduct) => {
       // Id du produit dans mon mock
       const product = this.productsService.getProduct(currentValue.product.id);
-      console.log(product!);
+      console.log(product);
       // Si le produit n'existe pas, je retourne la valeur de l'accumulateur, c'est à dire 0
       if(!product) return accumulator;
       // Si existe

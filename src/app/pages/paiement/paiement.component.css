@@ -12,8 +12,10 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: var(--purple);
+.titre {
+    color: var(--color-purple);
+    margin-left: 40px;
+    margin-bottom: -40px;
 }
 
 
