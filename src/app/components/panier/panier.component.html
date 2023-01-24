@@ -1,26 +1,36 @@
 <section>
   <div class="caracteristique">
-      <ul>
-          <li *ngFor="let basketProduct of basket; let index = index">
-            <article>
-              <br>
-              <img src = "{{basketProduct.product.image}}" alt = "{{basketProduct.product.titre}}"/>
-              <br>
-              <p><strong>Quantité: </strong>{{basketProduct.quantity}}</p>
-              <p><strong>Prix unitaire: </strong>{{basketProduct.product.prix}} €</p>
-              <p><strong>Article: </strong>{{basketProduct.product.titre}}</p>
-              <p><strong>Détails: </strong>{{basketProduct.product.texte}}</p>
-              <p><strong>Total d'achat article: </strong>{{basketProduct.product.prix}} €</p>
-              <button (click)="removeProduct(index)">Supprimer</button>
-              <br>
-            </article>
-          </li>
-      </ul>
-    </div>
-  </section>
-  <br>
-  <p><strong>Total de mes achats</strong> :{{this.basketService.totalPrice}} €</p>
-  <p><strong>Total des articles</strong> :{{this.basketService.productQuantity}}</p>
-  
-
-
+    <ul>
+      <li *ngFor="let basketProduct of basket; let index = index">
+        <article>
+          <br />
+          <img
+            src="{{ basketProduct.product.image }}"
+            alt="{{ basketProduct.product.titre }}"
+          />
+          <br />
+          <p><strong>Quantité: </strong>{{basketProduct.quantity}}</p>
+          <p>
+            <strong>Prix unitaire: </strong>{{ basketProduct.product.prix }} €
+          </p>
+          <p><strong>Article: </strong>{{ basketProduct.product.titre }}</p>
+          <p><strong>Détails: </strong>{{ basketProduct.product.texte }}</p>
+          <p>
+            <!-- <strong>Total € article: </strong>{{ basketProduct.product.prix * selectedOption}} € -->
+            <strong>Total € article: </strong>{{ basketProduct.product.prix}} €
+          </p>
+          <button (click)="removeProduct(index)">Supprimer</button>
+          <button>Ajouter</button>
+          <br />
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+<br />
+<p>
+  <strong>Total de mes achats</strong> : {{ this.basketService.totalPrice }} € ttc
+</p>
+<p>
+  <strong>Total des articles</strong> : {{ this.basketService.productQuantity }}
+</p>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import {
   BasketProduct,
   BasketService,
@@ -10,13 +11,16 @@ import {
   styleUrls: ['./panier.component.css'],
 })
 export class PanierComponent {
+  // basket sera notre panier
   basket: BasketProduct[] = [];
-
-  constructor(public basketService: BasketService) {}
-
-  total = this.basketService.getTotalPrice();
-  products = this.basketService.getTotalQuantity();
+  // quantity: number = 0;
   
+  constructor(public basketService: BasketService) { 
+    // Je récupère les méthodes contenues dans le BasketService
+    this.basketService.getTotalPrice();
+    this.basketService.getTotalQuantity();
+  }
+
   ngOnInit() {
     this.basket = this.basketService.getBasket();
   }

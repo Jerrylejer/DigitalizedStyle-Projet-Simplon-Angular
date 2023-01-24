@@ -7,6 +7,7 @@ import { Item_productdetails, ITEMPRODUCTDETAILS } from '../../mocks/product-det
 export class ProductsService {
   constructor() { }
   // Accessible ailleurs via le constructor(private productsService: ProductsService) {}
+  // Retourner tous les produits
   getProducts(): Item_productdetails[] {
     return ITEMPRODUCTDETAILS;
   }

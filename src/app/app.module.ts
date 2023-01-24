@@ -42,6 +42,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastService, AngularToastifyModule } from 'angular-toastify'; 
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -75,6 +77,7 @@ import { ToastService, AngularToastifyModule } from 'angular-toastify';
     ProductConfigComponent,
     ModalComponent,
 
+
     
     
   ],
@@ -86,6 +89,7 @@ import { ToastService, AngularToastifyModule } from 'angular-toastify';
     BrowserAnimationsModule,
     MatDialogModule,
     AngularToastifyModule,
+    FormsModule
   ],
   providers: [ToastService],
   bootstrap: [AppComponent]
