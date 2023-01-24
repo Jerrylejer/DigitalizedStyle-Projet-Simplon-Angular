@@ -16,7 +16,8 @@ import { BasketProduct, BasketService } from 'src/app/services/basket/basket.ser
 export class OneProductComponent {
   items: Item_productdetails[] = ITEMPRODUCTDETAILS;
   item?: Item_productdetails;
-  quantity: number = 1;
+  quantity: number = 0;
+
  
   constructor(
     private activatedRoute: ActivatedRoute, 
@@ -31,7 +32,7 @@ export class OneProductComponent {
   ngOnInit() {
     this.getProduct();
     // Je récupère en console les infos de mon objet, c'est ok
-    console.log(this.item?.image);
+    // console.log(this.item?.image);
   }
 
   getProduct() {
@@ -50,7 +51,7 @@ export class OneProductComponent {
     if(!this.item) return;
     const basketProduct: BasketProduct = {
       product: this.item,
-      quantity: this.quantity
+      quantity: this.quantity += 1
     }
     this.basketService.addProductToBasket(basketProduct);
     console.log(basketProduct);

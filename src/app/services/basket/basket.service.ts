@@ -12,7 +12,7 @@ export interface BasketProduct {
 export class BasketService {
   // Total du panier
   totalPrice: number = 0;
-  // Quantité de produits du panier
+  // Quantité totale de produits du panier
   productQuantity: number = 0;
 
   constructor(private productsService: ProductsService) {}
@@ -88,7 +88,7 @@ export class BasketService {
     const total = basket.reduce((accumulator: number, currentValue: BasketProduct) => {
       // Id du produit dans mon mock
       const product = this.productsService.getProduct(currentValue.product.id);
-      console.log(product);
+      // console.log(product);
       // Si le produit n'existe pas, je retourne la valeur de l'accumulateur, c'est à dire 0
       if(!product) return accumulator;
       // Si existe
@@ -96,7 +96,7 @@ export class BasketService {
     }, 0)
     // Je retourne la valeur Totale à la variable totalPrice
     this.totalPrice = total;
-    console.log(this.totalPrice);
+    // console.log(this.totalPrice);
   }
 
   // Cette fonction calcule le nombre de produits dans le panier
@@ -110,7 +110,7 @@ export class BasketService {
     }, 0)
     // Je retourne la quantité total à la variable productQuantity
     this.productQuantity = total;
-    console.log(this.productQuantity);
+    // console.log(this.productQuantity);
   }
 
   // Initialisation du panier à l'ouverture de l'app
