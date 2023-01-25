@@ -43,6 +43,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastService, AngularToastifyModule } from 'angular-toastify'; 
 import { FormsModule } from '@angular/forms';
+import { HistoryViewsComponent } from './components/history-views/history-views.component';
 
 
 @NgModule({
@@ -76,6 +77,7 @@ import { FormsModule } from '@angular/forms';
     GalerieProduitComponent,
     ProductConfigComponent,
     ModalComponent,
+    HistoryViewsComponent,
 
 
     

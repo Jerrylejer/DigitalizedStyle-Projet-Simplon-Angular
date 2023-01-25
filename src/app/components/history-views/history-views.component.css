@@ -1,0 +1,14 @@
+
+p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-purple);
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
