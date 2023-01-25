@@ -1,16 +1,30 @@
 <!--DOUDOUNNE-->
 <article>
-    <img class="icone"
-          src = "{{Item_productdetails.icone}}" alt ="{{Item_productdetails.description}}"/>
-    <a routerLink = "/products/product/{{ Item_productdetails.id }}">
-        <img src = "{{Item_productdetails.image}}" alt = "{{Item_productdetails.titre}}"/>
-    </a>
-    <div class="blocktext">
-    <div>  
-    <h2><a routerLink = "/products/product/{{ Item_productdetails.id }}">{{Item_productdetails.titre}}</a></h2>
-    <p>{{Item_productdetails.prix}}{{Item_productdetails.unite}}</p>
-    </div> 
-    <button class="button" routerLink = "/products/product/{{ Item_productdetails.id }}">BUY
-    </button> 
+  <img
+    class="icone"
+    src="{{ Item_productdetails.icone }}"
+    alt="{{ Item_productdetails.description }}"
+  />
+  <a routerLink="/products/product/{{ Item_productdetails.id }}">
+    <img
+      src="{{ Item_productdetails.image }}"
+      alt="{{ Item_productdetails.titre }}"
+    />
+  </a>
+  <div class="blocktext">
+    <div>
+      <h2>
+        <a routerLink="/products/product/{{ Item_productdetails.id }}">{{
+          Item_productdetails.titre
+        }}</a>
+      </h2>
+      <p>{{ Item_productdetails.prix }}{{ Item_productdetails.unite }}</p>
     </div>
-  </article>
+    <button
+      class="button"
+      routerLink="/products/product/{{ Item_productdetails.id }}"
+    >
+      BUY
+    </button>
+  </div>
+</article>

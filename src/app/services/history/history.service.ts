@@ -1,23 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Item_productdetails } from 'src/app/mocks/product-details.mock';
 
-export interface BasketProduct {
-  product: Item_productdetails;
-}
-
 @Injectable({
   providedIn: 'root',
 })
 export class HistoryService {
-
-  constructor() {}
-
+  constructor() {} // injecter dans le constructor le productervcie
   // Cette fonction crée l'historique
   private createHistory() {
-    // Je crée un basket de type tableau de l'interface BasketProduct
-    const newHistory: BasketProduct[] = [];
     // Pour l'usage localStorage, je suis obligé de le transfomer en format JSON
-    const stringifyHistory = JSON.stringify(newHistory);
+    const stringifyHistory = JSON.stringify([]);
     // Je le stocke dans le LocalStorage('clé', 'Valeur')
     localStorage.setItem('history', stringifyHistory);
   }
@@ -38,24 +30,22 @@ export class HistoryService {
     }
   }
 
-    // Cette fonction ajoute un produit à l'historique ou retourne l'historique s'il existe déjà
-    addProductToHistory(basketProduct: BasketProduct) {
-      // Je récupère l'historique dans une constante
-      const history = this.getHistory();
-      // Je vérifie si le produit existe déjà dans l'historique
-      const alreadyInHistory = history.find((product: BasketProduct) => product.product.id === basketProduct.product.id);
-      // S'in existe déjà
-      if(alreadyInHistory) {
-        return history;
-      } else {
-        // S'il n'existe pas, je l'ajoute à l'historique
-        history.push(basketProduct);
-        localStorage.setItem('basket', JSON.stringify(history));
-      }
+  // Cette fonction ajoute un produit à l'historique ou retourne l'historique s'il existe déjà
+  addProductToHistory(product: Item_productdetails) {
+    // Je récupère l'historique dans une constante
+    const history = this.getHistory();
+    // Je vérifie si le produit existe déjà dans l'historique
+    const alreadyInHistory = history.find(
+      (newProduct: Item_productdetails) =>
+        newProduct.id === product.id
+    );
+    // S'in existe déjà
+    if (alreadyInHistory) {
+      return history;
+    } else {
+      // S'il n'existe pas, je l'ajoute à l'historique
+      history.push(product);
     }
-
-  // Initialisation du panier à l'ouverture de l'app
-  initBasket() {
-    this.getHistory();
+    localStorage.setItem('history', JSON.stringify(history));
   }
 }

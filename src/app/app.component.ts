@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HistoryService } from './services/history/history.service';
 
 
 @Component({
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Digitalized-style';
+
+  constructor(private historyService: HistoryService) {}
+
+  // A l'ouverture du site, je lance ma feature d'historique
+  ngOnInit() {
+  this.historyService.getHistory();
+  }
   
 }
