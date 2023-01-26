@@ -1,4 +1,4 @@
-import { Component, ComponentRef} from '@angular/core';
+import { Component} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 import { ITEMPRODUCTDETAILS,Item_productdetails} from 'src/app/mocks/product-details.mock';
@@ -10,23 +10,21 @@ import { ITEMPRODUCTDETAILS,Item_productdetails} from 'src/app/mocks/product-det
 })
 export class ProductListComponent {
   item_productdetails: Item_productdetails[] = ITEMPRODUCTDETAILS;
+  
   titreToDisplay = 'DOUDOUNNES';
   btnText = 'Nouveautés';
-  constructor(private dialogRef : MatDialog){}
   
- openDialogClick(){
-   this.dialogRef.open(ModalComponent,
-    { 
-      height: '700px',
-      width: '900px',
+  constructor(private dialog: MatDialog){}
+  
+  openDialog() {
+     this.dialog.open(ModalComponent,{
+      height: '500px',
+      width: '600px',
       position: {
-        top:"-2000px",
+        top:"150px",
         left:"600px",
-        
-
       }
-    
-    
-   });
-  }
+  });
+ }
 }
+ 

@@ -40,10 +40,16 @@ import { ModalComponent } from './components/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { ToastService, AngularToastifyModule } from 'angular-toastify'; 
 import { FormsModule } from '@angular/forms';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { NouveautesComponent } from './pages/nouveautes/nouveautes.component';
+import { MasqueCasquesComponent } from './pages/masque-casques/masque-casques.component';
+import { NouveauteOneCategorieComponent } from './components/nouveaute-one-categorie/nouveaute-one-categorie.component';
+import { MasqueCasquesCardComponent } from './components/masque-casques-card/masque-casques-card.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +82,12 @@ import { FormsModule } from '@angular/forms';
     GalerieProduitComponent,
     ProductConfigComponent,
     ModalComponent,
+    NouveautesComponent,
+    MasqueCasquesComponent,
+    NouveauteOneCategorieComponent,
+    MasqueCasquesCardComponent,
+    
+    
 
 
     
@@ -86,10 +98,12 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatSlideToggleModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
     MatDialogModule,
     AngularToastifyModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
   ],
   providers: [ToastService],
   bootstrap: [AppComponent]

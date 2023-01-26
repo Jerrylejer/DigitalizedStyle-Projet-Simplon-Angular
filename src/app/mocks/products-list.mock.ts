@@ -3,7 +3,7 @@ export interface ItemProduct {
   image: string;
   titre: string;
   icone: string;
-  description: string;
+  alt: string;
 }
 
 export interface Item {
@@ -22,7 +22,7 @@ export const ITEMS: Item[] = [
         image: 'assets/categorieFemme/casque.png',
         titre: 'MASQUES ET CASQUES',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -30,7 +30,7 @@ export const ITEMS: Item[] = [
         image: 'assets/Doudounnes/doudounnesProduit/doudounne1.png',
         titre: 'DOUDOUNNES',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -38,7 +38,7 @@ export const ITEMS: Item[] = [
         image: 'assets/categorieFemme/robe.png',
         titre: 'ROBES',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -46,7 +46,7 @@ export const ITEMS: Item[] = [
         image: 'assets/categorieFemme/bottes.png',
         titre: 'SOULIERS',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -54,7 +54,7 @@ export const ITEMS: Item[] = [
         image: 'assets/categorieFemme/top.png',
         titre: 'TOP ET T-SHIRT',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -62,7 +62,7 @@ export const ITEMS: Item[] = [
         image: 'assets/categorieFemme/legins.png',
         titre: 'PANTALONS',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
     ],
   },
@@ -75,7 +75,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ENFANT 1',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -83,7 +83,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ENFANT 2',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -91,7 +91,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ENFANTS 3',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -99,7 +99,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ENFANTS 4',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -107,7 +107,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ENFANTS 5',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -115,7 +115,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ENFANTS 6',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
     ],
   },
@@ -128,7 +128,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME HOMMES 1',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -136,7 +136,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME HOMMES 2',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -144,7 +144,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME HOMMES 3',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -152,7 +152,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME HOMMES 4',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -160,15 +160,15 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME HOMMES 5',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
-        id:6,
+        id: 6,
         image: '',
         titre: 'GAMME HOMMES 6',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
     ],
   },
@@ -181,7 +181,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME BIJOUX 1',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -189,7 +189,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME BIJOUX 2',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -197,7 +197,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME BIJOUX 3',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -205,7 +205,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME BIJOUX 4',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -213,7 +213,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME BIJOUX 5',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -221,7 +221,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME BIJOUX 6',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
     ],
   },
@@ -231,10 +231,10 @@ export const ITEMS: Item[] = [
     items: [
       {
         id: 1,
-        image: '',
+        image: 'assets/categorieFemme/casque.png',
         titre: 'GAMME ACCESSOIRE 1',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -242,7 +242,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ACCESSOIRE 2',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -250,7 +250,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ACCESSOIRE 3',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -258,7 +258,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ACCESSOIRE 4',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -266,7 +266,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ACCESSOIRE 5',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -274,7 +274,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME ACCESSOIRE 6',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
     ],
   },
@@ -287,7 +287,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME NOUVEAUTES 1',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -295,7 +295,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME NOUVEAUTES 2',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -303,7 +303,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME NOUVEAUTES 3',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -311,7 +311,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME NOUVEAUTES 4',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -319,7 +319,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME NOUVEAUTES 5',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
 
       {
@@ -327,7 +327,7 @@ export const ITEMS: Item[] = [
         image: '',
         titre: 'GAMME NOUVEAUTES 6',
         icone: 'assets/wishlistCoeur/coeur1.png',
-        description: 'coeur',
+        alt: 'coeur',
       },
     ],
   },

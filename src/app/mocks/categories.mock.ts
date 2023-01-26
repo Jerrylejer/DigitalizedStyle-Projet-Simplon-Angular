@@ -3,7 +3,7 @@ export interface Item_categorie {
     image: string;
     titre: string;
     icone: string;
-    description: string;
+    alt: string;
     
 }
 
@@ -13,7 +13,7 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
     image: "assets/categories/categoriesFemme.png",
     titre: "FEMMES",
     icone: "assets/wishlistCoeur/coeur1.png",
-    description: "coeur"
+    alt: "coeur"
     
  }, 
  { 
@@ -21,42 +21,42 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
     image: "assets/categories/enfant.jpg",
     titre: "ENFANTS",
     icone: "assets/wishlistCoeur/coeur1.png",
-    description: "coeur"
+    alt: "coeur"
  },
  {  
     id: 3,
     image: "assets/categories/categoriesHomme.png",
     titre: "HOMMES",
     icone: "assets/wishlistCoeur/coeur1.png",
-    description: "coeur"
+    alt: "coeur"
  }, 
  { 
     id: 4,
     image: "assets/categories/jewellery.jpg",
     titre: "BIJOUX",
     icone: "assets/wishlistCoeur/coeur1.png",
-    description: "coeur"
+    alt: "coeur"
  },
  {
     id: 5,
     image: "assets/categories/categoriesAccessoir-masque.png",
     titre: "ACCESSOIRES",
     icone: "assets/wishlistCoeur/coeur1.png",
-    description: "coeur"
+    alt: "coeur"
  },
  {
     id: 6,
     image: "assets/categories/categorieNouveaute.png",
     titre: "NOUVEAUTES",
     icone: "assets/wishlistCoeur/coeur1.png",
-    description: "coeur"
+    alt: "coeur"
  },
  {
    id: 7,
    image: "",
    titre: "DIGITALIZEDSTYLE",
    icone: "",
-   description: ""
+   alt: ""
 }]
  
    

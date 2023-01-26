@@ -1,12 +1,14 @@
 <section>
-<div classe="container">
-<h2>WELCOME TO DIGITALIZED<span>STYLE</span></h2>
-<p>COLLECTION CAPSULE HIVER 2023</p>
-<img src="../../../assets/icones/nouveau-produit.png" alt="boite de tresor">
-<div class="btnBlock">
-<button routerLink = "http://localhost:4200/not-found">TOUTES LES NOUVEAUTES
-</button> 
-<button class="fermeture">X FERMER</button> 
-</div>
-</div>
-</section>
+    <div classe="container">
+    <h2>WELCOME TO DIGITALIZED<span>STYLE</span></h2>
+    <p>COLLECTION CAPSULE HIVER 2023</p>
+    <img src="../../../assets/icones/nouveau-produit.png" alt="boite de tresor">
+    
+    <div class="btnBlock">
+    <button mat-button [mat-dialog-close] routerLink = "/nouveautes" >NOUVEAUTEES</button>
+    <button mat-button [mat-dialog-close]="true"> X FERMER </button>
+    </div>
+    </div>
+    </section>
+    
+    

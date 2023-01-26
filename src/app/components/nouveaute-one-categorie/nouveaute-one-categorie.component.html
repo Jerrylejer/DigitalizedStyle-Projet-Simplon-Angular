@@ -1,0 +1,16 @@
+<article>
+    <img class="icone"
+          src = "{{productNew.icone}}" alt ="{{productNew.alt}}"/>
+    <a routerLink = "/products/product/{{ productNew.id }}">
+        <img src = "{{productNew.image}}" alt = "{{productNew.titre}}"/>
+    </a>
+    <div class="blocktext">
+    <div>  
+    <h2><a routerLink = "/products/product/{{ productNew.id }}">{{productNew.titre}}</a></h2>
+    <p>{{ productNew.prix }}{{ productNew.unite }}</p>
+    </div> 
+    <button class="button" routerLink = "/products/product/{{ productNew.id }}">BUY
+    </button> 
+    </div>
+  </article>
+

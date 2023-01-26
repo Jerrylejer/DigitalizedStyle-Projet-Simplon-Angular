@@ -1,0 +1,22 @@
+<section>
+  <h2>{{ titreToDisplay }}</h2>
+    <app-barre-violette></app-barre-violette>
+    <div class="container">
+    
+    <app-nouveaute-one-categorie
+      *ngFor="let productNew of productNew"
+      [productNew]="productNew"
+    ></app-nouveaute-one-categorie>
+    
+    <app-one-product-card 
+      *ngFor = "let item_productdetails of item_productdetails | slice:0:3" 
+      [Item_productdetails]="item_productdetails"
+    ></app-one-product-card>
+    <app-masque-casques-card
+          *ngFor = "let productMasque of productMasque | slice:0:3" 
+          [productMasque] = "productMasque"
+        ></app-masque-casques-card>
+</div>
+<app-barre-violette></app-barre-violette>
+<div class="container-empty"></div>
+</section>

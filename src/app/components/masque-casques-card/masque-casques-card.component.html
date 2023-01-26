@@ -1,0 +1,17 @@
+<!--Masques-->
+<article>
+    <img class="icone"
+          src = "{{productMasque.icone}}" alt ="{{ productMasque.alt }}"/>
+    <a routerLink = "/products/product/{{ productMasque.id }}">
+        <img src = "{{ productMasque.image }}" alt = "{{ productMasque.titre }}"/>
+    </a>
+    <div class="blocktext">
+    <div>  
+    <h2><a routerLink = "/products/product/{{ productMasque.id }}">{{ productMasque.titre}}</a></h2>
+    <p>{{ productMasque.prix}}{{ productMasque.unite}}</p>
+    </div> 
+    <button class="button" routerLink = "/products/product/{{ productMasque.id }}">BUY
+    </button> 
+    </div>
+  </article>
+
