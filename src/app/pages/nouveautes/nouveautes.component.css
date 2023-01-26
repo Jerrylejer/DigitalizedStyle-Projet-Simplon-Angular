@@ -1,0 +1,26 @@
+section {
+    margin-top: -175px;
+    
+}
+
+.container {
+    
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 80px;
+    display: grid;
+    place-items: center;
+    margin: O;
+    padding: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-left: 30px;
+ }
+
+ .container-empty {
+    height: 400px;
+    }
+
+
+    

@@ -4,7 +4,9 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { CompteClientComponent } from './pages/compte-client/compte-client.component';
 import { FavorisComponent } from './pages/favoris/favoris.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MasqueCasquesComponent } from './pages/masque-casques/masque-casques.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { NouveautesComponent } from './pages/nouveautes/nouveautes.component';
 import { OneCategorieComponent } from './pages/one-categorie/one-categorie.component';
 import { OneProductComponent } from './pages/one-product/one-product.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
@@ -23,11 +25,20 @@ const routes: Routes = [
     component:CategoriesComponent
   },
   {
+    path: 'Masques et casques',
+    component: MasqueCasquesComponent,
+  },
+  {
     // Pour se diriger sur Femmes, enfants, hommes, bijoux, accassoires, DS
     // path:"categories/:id/products/:id",
     path:"categories/:id",
     component:OneCategorieComponent
   },
+  {
+    path: 'nouveautes',
+    component: NouveautesComponent, 
+  },
+  
   {
     path:"compte",
     component:CompteClientComponent

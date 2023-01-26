@@ -1,36 +1,38 @@
 .container {
     font-display: inline;
-    font-size: 46px;
-    }
+   }
     h2 {
     font-display: inline;
-    font-size: 38px;
+    
     color: var(--color-purple);
     margin-top: 30px;
     margin-left: 90px;
     }
     span {
-        font-size: 24px;
+        font-size: 14px;
         color: var(--color-purple);
     }
     .btnBlock {
      display: flex;
      justify-content: center;
-     margin-top:20px;  
+     margin-top:20px;
+      
     }
     p {
-        font-size: 28px;
-        margin-left: 130px;
+        font-size: 20px;
+        margin-left: 90px;
     }
-    button {
-        font-size: 14px;
-        font-weight: bold;
-        border: 2px solid var(--color-purple);
-        gap: 10px;
-        background-color: white;
+    button  {
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+        border: 3px solid var(--color-purple);
+        margin-left: 10px;
     }
+    
     img {
-        width: 350px;
+        width: 200px;
         margin-left: 250px;
         margin-top: 50px;
     }

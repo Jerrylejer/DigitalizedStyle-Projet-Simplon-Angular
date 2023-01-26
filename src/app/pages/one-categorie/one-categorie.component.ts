@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ModalComponent } from 'src/app/components/modal/modal.component';
 import { Item, ITEMS } from 'src/app/mocks/products-list.mock';
 
 // Catégories de produits des Top-catégories ()
@@ -16,12 +14,12 @@ export class OneCategorieComponent {
   // Mes gammes de produits pour les afficher
   productsRanges: Item[] = ITEMS;
   productsRange?: Item;
-  btnText = 'Nouveautés';
+  
+ 
   
    constructor(
     private activatedRoute: ActivatedRoute,
     private router : Router,
-    private dialogRef : MatDialog
     ) {}
 
     ngOnInit() {
@@ -45,15 +43,5 @@ export class OneCategorieComponent {
         this.router.navigate(["/not-found"]);
       }
     }
-    openDialogClick(){
-      this.dialogRef.open(ModalComponent,
-       { 
-         height: '700px',
-         width: '900px',
-         position: {
-           top:"-2000px",
-           left:"600px",
-        } 
-        });
-      }
-}
+  }
+

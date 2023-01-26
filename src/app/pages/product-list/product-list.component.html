@@ -2,11 +2,11 @@
 <section>
 <h2>{{titreToDisplay}}</h2>
   <app-barre-violette></app-barre-violette>
-  <div>
-  <button class="modal" (click)="openDialogClick()">{{ btnText }}</button>
-  <button class="modal2" (click)="openDialogClick()">{{ btnText }}</button>
-  <button class="modal2" (click)="openDialogClick()">{{ btnText }}</button>
-</div>
+  <mat-dialog-actions>
+  <button mat-raised-button class="btnmodal" (click)="openDialog()">{{ btnText }}</button>
+  <button mat-raised-button class="btnmodal btnmodal2" (click)="openDialog()">{{ btnText }}</button>
+  <button mat-raised-button class="btnmodal btnmodal3" (click)="openDialog()">{{ btnText }}</button>
+</mat-dialog-actions>
   <div class="container">
   <app-one-product-card 
       *ngFor="let item_productdetails of item_productdetails"

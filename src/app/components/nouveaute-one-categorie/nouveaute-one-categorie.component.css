@@ -1,0 +1,46 @@
+img {
+    width: 350px;
+  }
+  
+.icone {
+    width: 48px;
+    height: auto;
+    position: absolute;
+    margin-left: 312px;
+    border-radius: 20%;
+    border: 3px solid #7e2bbb;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  
+  p {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: -30px;
+  }
+  
+  .blocktext {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  
+  }
+  .button {
+    width: 80px;
+    height: 80px;
+    background-color:white;
+    border: 3px solid var(--color-purple);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 2px;
+    border-radius: 50%;
+  }
+
+  
+   

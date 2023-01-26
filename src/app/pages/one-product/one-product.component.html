@@ -1,15 +1,17 @@
 <section>
-    <app-barre-violette></app-barre-violette>
+    
     <div class="container">
-        <img src= {{item?.image}}>
+        <app-galerie-produit></app-galerie-produit>
+        <div><img src= {{item?.image}}></div>
         <div class="block-text">
             <h2>{{item?.titre}}</h2>
             <p>{{item?.texte}}</p>
             <br>
-            <p>{{item?.prix}} EUROS</p>   
+            <p>{{item?.prix}} {{item?.unite}}</p>
+           
         </div>
     </div>
-    <app-galerie-produit></app-galerie-produit>
+   
     <app-product-config></app-product-config>
     <lib-toastify-toast-container [autoClose]=3000></lib-toastify-toast-container>
     <div class="button">

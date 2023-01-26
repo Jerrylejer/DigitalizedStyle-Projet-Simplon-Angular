@@ -1,0 +1,18 @@
+<section>
+    <h2>{{titreToDisplay}}</h2>
+      <app-barre-violette></app-barre-violette>
+      <mat-dialog-actions>
+        <button mat-raised-button class="btnmodal" (click)="openDialog()">{{ btnText }}</button>
+        <button mat-raised-button class="btnmodal btnmodal2" (click)="openDialog()">{{ btnText }}</button>
+        <button mat-raised-button class="btnmodal btnmodal3" (click)="openDialog()">{{ btnText }}</button>
+      </mat-dialog-actions>
+      <div class="container">
+      <app-masque-casques-card
+          *ngFor = "let productMasque of productMasque " 
+          [productMasque] = "productMasque"
+        ></app-masque-casques-card>
+      </div>
+      <app-barre-violette></app-barre-violette>
+      <div class="container-empty"></div>
+      </section>
+

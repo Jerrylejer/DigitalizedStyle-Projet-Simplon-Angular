@@ -11,6 +11,8 @@ import { Item_categorie, ITEM_CATEGORIES } from 'src/app/mocks/categories.mock';
 })
 export class CategoriesComponent {
  item_categories: Item_categorie[] = ITEM_CATEGORIES;
+ 
+ 
  titreToDisplay='CATEGORIES';
 }
 
