@@ -6,6 +6,7 @@ export interface Item_productdetails {
     imageG2: string;
     imageG3: string;
     imageG4: string;
+    imageG5: string;
     titre: string;
     icone: string;
     alt: string;
@@ -54,8 +55,8 @@ export interface Item_productdetails {
          imageG1: "assets/Doudounnes/det-metalDounne/detMetDounne2.png",
          imageG2: "assets/Doudounnes/det-metalDounne/detMetDounne3.png",
          imageG3: "assets/Doudounnes/det-metalDounne/detMetDounne4.png",
-         imageG4: "assets/Doudounnes/det-metalDounne/detMetDounne5.png",
-         imageG5: "assets/Doudounnes/det-metalDounne/metDetDunne.png",
+         imageG4: "assets/Doudounnes/det-metalDounne/metDetDunne.png",
+         imageG5: "assets/Doudounnes/det-metalDounne/detMetDounne5.png",
          titre:"Space-dunne",
          icone: "assets/wishlistCoeur/coeur1.png",
          alt: "coeur",
@@ -82,7 +83,7 @@ export interface Item_productdetails {
       {
          id: 5,
          produit:"DUDOUNNE",
-         image: "assets/Doudounnes/doudounnesProduit/doudounne2.png",
+         image: "assets/Doudounnes/doudounnesProduit/doudunneWhite2.png",
          imageG1: "assets/Doudounnes/doudounneWhite-det/doudouneWhite1.png",
          imageG2: "assets/Doudounnes/doudounneWhite-det/doudouneWhite2.png",
          imageG3: "assets/Doudounnes/doudounneWhite-det/doudouneWhite3.png",
