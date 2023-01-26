@@ -9,6 +9,5 @@ import { Item_productdetails } from 'src/app/mocks/product-details.mock';
 })
 export class OneProductCardComponent {
   @Input() Item_productdetails!: Item_productdetails;
-  
 }
 

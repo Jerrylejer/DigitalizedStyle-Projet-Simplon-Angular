@@ -1,7 +1,9 @@
 <p>Articles consultés</p>
 <div class="container">
   <li *ngFor="let product of histories">
-    <app-one-product-card [Item_productdetails]="product">
+    <app-one-product-card [Item_productdetails] = "product">
     </app-one-product-card>
+    <!-- La page ne charge pas malgré le changement de l'url -->
+    <a routerLink="/products/product/{{ product.id }}"></a>
   </li>
 </div>
