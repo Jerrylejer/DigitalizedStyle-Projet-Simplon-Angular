@@ -43,6 +43,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { ToastService, AngularToastifyModule } from 'angular-toastify'; 
 import { FormsModule } from '@angular/forms';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -50,6 +51,8 @@ import { NouveautesComponent } from './pages/nouveautes/nouveautes.component';
 import { MasqueCasquesComponent } from './pages/masque-casques/masque-casques.component';
 import { NouveauteOneCategorieComponent } from './components/nouveaute-one-categorie/nouveaute-one-categorie.component';
 import { MasqueCasquesCardComponent } from './components/masque-casques-card/masque-casques-card.component';
+import { HistoryViewsComponent } from './components/history-views/history-views.component';
+
 
 @NgModule({
   declarations: [
@@ -86,8 +89,8 @@ import { MasqueCasquesCardComponent } from './components/masque-casques-card/mas
     MasqueCasquesComponent,
     NouveauteOneCategorieComponent,
     MasqueCasquesCardComponent,
-    
-    
+    HistoryViewsComponent,
+
 
 
     

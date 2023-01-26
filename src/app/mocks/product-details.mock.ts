@@ -2,6 +2,10 @@ export interface Item_productdetails {
     id:    number;
     produit:string;
     image: string;
+    imageG1: string;
+    imageG2: string;
+    imageG3: string;
+    imageG4: string;
     titre: string;
     icone: string;
     alt: string;
@@ -14,6 +18,10 @@ export interface Item_productdetails {
        id: 1,
        produit:"DUDOUNNE",
        image: "assets/Doudounnes/doudounnesProduit/doudounne3.png",
+       imageG1: "mon chemin vers 1",
+       imageG2: "mon chemin vers 2",
+       imageG3: "mon chemin vers 3",
+       imageG4: "mon chemin vers 4",
        titre: "Digit-dunne 4.0",
        icone: "assets/wishlistCoeur/coeur1.png",
        alt: "coeur",
@@ -25,6 +33,10 @@ export interface Item_productdetails {
        id: 2,
        produit:"DUDOUNNE",
        image: "assets/Doudounnes/doudounnesProduit/doudounne1.png",
+       imageG1: "mon chemin vers 5",
+       imageG2: "mon chemin vers 6",
+       imageG3: "mon chemin vers 7",
+       imageG4: "mon chemin vers 8",
        titre:"White conect-dunne",
        icone: "assets/wishlistCoeur/coeur1.png",
        alt: "coeur",
@@ -36,6 +48,10 @@ export interface Item_productdetails {
        id: 3,
        produit:"DUDOUNNE",
        image: "assets/Doudounnes/doudounnesProduit/doudounne4.png",
+       imageG1: "mon chemin vers 9",
+       imageG2: "mon chemin vers 10",
+       imageG3: "mon chemin vers 11",
+       imageG4: "mon chemin vers 12",
        titre:"Space-dunne",
        icone: "assets/wishlistCoeur/coeur1.png",
        alt: "coeur",
@@ -47,6 +63,10 @@ export interface Item_productdetails {
        id: 4,
        produit:"DUDOUNNE",
        image: "assets/Doudounnes/doudounnesProduit/doudounne6.png",
+       imageG1: "mon chemin vers 13",
+       imageG2: "mon chemin vers 14",
+       imageG3: "mon chemin vers 15",
+       imageG4: "mon chemin vers 16",
        titre:"Meta conect-dunne",
        icone: "assets/wishlistCoeur/coeur1.png",
        alt: "coeur",
@@ -58,6 +78,10 @@ export interface Item_productdetails {
        id: 5,
        produit:"DUDOUNNE",
        image: "assets/Doudounnes/doudounnesProduit/doudounne2.png",
+       imageG1: "mon chemin vers 16",
+       imageG2: "mon chemin vers 17",
+       imageG3: "mon chemin vers 18",
+       imageG4: "mon chemin vers 19",
        titre:"Space connect",
        icone: "assets/wishlistCoeur/coeur1.png",
        alt: "coeur",
@@ -69,6 +93,10 @@ export interface Item_productdetails {
        id: 6,
        produit:"DUDOUNNE",
        image: "assets/Doudounnes/doudounnesProduit/doudounne5.png",
+       imageG1: "assets/Doudounnes/doudounnesDet/doudounneDet.jpg",
+       imageG2: "assets/Doudounnes/doudounnesDet/doudounneDet1.jpg",
+       imageG3: "assets/Doudounnes/doudounnesDet/doudounneDet2.jpg",
+       imageG4: "assets/Doudounnes/doudounnesDet/doudounneDet3.jpg",
        titre:"Hit-hot dunne",
        icone: "assets/wishlistCoeur/coeur1.png",
        alt: "coeur",

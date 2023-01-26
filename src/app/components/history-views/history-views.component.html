@@ -1,0 +1,7 @@
+<p>Articles consultés</p>
+<div class="container">
+  <li *ngFor="let product of histories">
+    <app-one-product-card [Item_productdetails]="product">
+    </app-one-product-card>
+  </li>
+</div>

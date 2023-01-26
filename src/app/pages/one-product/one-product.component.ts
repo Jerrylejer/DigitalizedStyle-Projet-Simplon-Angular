@@ -6,6 +6,7 @@ import {
   Item_productdetails,
 } from 'src/app/mocks/product-details.mock';
 import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
+import { HistoryService } from 'src/app/services/history/history.service';
 
 // Produits
 @Component({
@@ -23,7 +24,8 @@ export class OneProductComponent {
     private activatedRoute: ActivatedRoute, 
     private router: Router,
     private basketService: BasketService,
-    private _toastService: ToastService) {}
+    private _toastService: ToastService,
+    private historyService: HistoryService) {}
 
   addInfoToast() {
     this._toastService.info("L'article est ajouté à votre panier");
@@ -33,6 +35,18 @@ export class OneProductComponent {
     this.getProduct();
     // Je récupère en console les infos de mon objet, c'est ok
     // console.log(this.item?.image);
+  }
+
+  // A la sortie de la page produit, je rajoute le produit à l'historique
+  ngOnDestroy() {
+    this.addToHistory();
+  }
+
+  // Méthode qui ajoute le produit en appelant la méthode correspondante du service
+  addToHistory() {
+    if(this.item) {
+      this.historyService.addProductToHistory(this.item);
+    }
   }
 
   getProduct() {
