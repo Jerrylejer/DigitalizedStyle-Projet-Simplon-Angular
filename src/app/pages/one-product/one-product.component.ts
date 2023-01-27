@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastService } from 'angular-toastify';
+import { ProductMasque, PRODUCTMASQUES } from 'src/app/mocks/masqueCasque.mock';
 import {
   ITEMPRODUCTDETAILS,
   Item_productdetails,

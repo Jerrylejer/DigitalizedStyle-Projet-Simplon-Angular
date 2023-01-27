@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Item_productdetails } from 'src/app/mocks/product-details.mock';
 import { HistoryService } from 'src/app/services/history/history.service';
 

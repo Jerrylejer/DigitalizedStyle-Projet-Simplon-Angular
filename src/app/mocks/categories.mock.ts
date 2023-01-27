@@ -44,19 +44,13 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
     icone: "assets/wishlistCoeur/coeur1.png",
     alt: "coeur"
  },
- {
-    id: 6,
-    image: "assets/categories/categorieNouveaute.png",
-    titre: "NOUVEAUTES",
-    icone: "assets/wishlistCoeur/coeur1.png",
-    alt: "coeur"
- },
- {
-   id: 7,
-   image: "",
-   titre: "DIGITALIZEDSTYLE",
-   icone: "",
-   alt: ""
-}]
+//  {
+//     id: 6,
+//     image: "assets/categories/categorieNouveaute.png",
+//     titre: "NOUVEAUTES",
+//     icone: "assets/wishlistCoeur/coeur1.png",
+//     alt: "coeur"
+//  },
+]
  
    
