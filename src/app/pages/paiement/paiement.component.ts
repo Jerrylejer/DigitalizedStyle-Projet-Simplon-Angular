@@ -15,13 +15,16 @@ export class PaiementComponent {
     private router: Router) {}
 
   ngOnInit() {
+    let expDate = 
+    /^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/;
+
     this.paymentForm = this.formBuilder.group({
       card_username: [null, [Validators.required]],
-      card_number: [null, [Validators.required]],
-      card_exp: [null, [Validators.required]],
+      card_number: [null, [Validators.required,  Validators.pattern("\\d{16}$")]],
+      card_exp: [null, [Validators.required, Validators.pattern(expDate)]],
       card_cvc: [
         null,
-        [Validators.required],
+        [Validators.required, Validators.pattern("\\d{3}$")],
       ],
     });
   }
