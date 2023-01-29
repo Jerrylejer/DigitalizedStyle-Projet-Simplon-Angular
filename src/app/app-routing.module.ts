@@ -11,6 +11,7 @@ import { OneCategorieComponent } from './pages/one-categorie/one-categorie.compo
 import { OneProductComponent } from './pages/one-product/one-product.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
+import { ValidationCommandeComponent } from './pages/validation-commande/validation-commande.component';
 //Import des futures pages
 
 // Définition du paths et component dans le tableau
@@ -60,6 +61,10 @@ const routes: Routes = [
   {
     path:"paiement",
     component:PaiementComponent
+  },
+  {
+    path:"validation-commande",
+    component:ValidationCommandeComponent
   },
   {
     path:"not-found",
