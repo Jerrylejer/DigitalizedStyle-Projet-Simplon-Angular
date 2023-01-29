@@ -91,10 +91,6 @@ import { HistoryViewsComponent } from './components/history-views/history-views.
     MasqueCasquesCardComponent,
     HistoryViewsComponent,
 
-
-
-    
-    
   ],
   imports: [
     BrowserModule,

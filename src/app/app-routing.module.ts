@@ -20,6 +20,12 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
+    // Pour se diriger sur Femmes, enfants, hommes, bijoux, accassoires, DS
+    // path:"categories/:id/products/:id",
+    path:"categories/:id",
+    component:OneCategorieComponent
+  },
+  {
     // Page des catégories
     path:"categories",
     component:CategoriesComponent
@@ -27,12 +33,6 @@ const routes: Routes = [
   {
     path: 'Masques et casques',
     component: MasqueCasquesComponent,
-  },
-  {
-    // Pour se diriger sur Femmes, enfants, hommes, bijoux, accassoires, DS
-    // path:"categories/:id/products/:id",
-    path:"categories/:id",
-    component:OneCategorieComponent
   },
   {
     path: 'nouveautes',
@@ -48,14 +48,14 @@ const routes: Routes = [
     component:FavorisComponent
   },
   {
-    // Pour se diriger sur les Doudounes
-    path:"products/:id",
-    component:ProductListComponent
-  },
-  {
     // Une Doudoune spécifique
     path:"products/product/:id",
     component:OneProductComponent
+  },
+  {
+    // Pour se diriger sur les Doudounes
+    path:"products/:id",
+    component:ProductListComponent
   },
   {
     path:"paiement",

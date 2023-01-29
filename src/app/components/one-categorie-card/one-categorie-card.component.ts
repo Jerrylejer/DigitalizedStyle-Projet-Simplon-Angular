@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Item_categorie } from 'src/app/mocks/categories.mock';
-import { Item, ItemProduct } from 'src/app/mocks/products-list.mock';
+import { ItemProduct } from 'src/app/mocks/products-list.mock';
 @Component({
   selector: 'app-one-categorie-card',
   templateUrl: './one-categorie-card.component.html',
