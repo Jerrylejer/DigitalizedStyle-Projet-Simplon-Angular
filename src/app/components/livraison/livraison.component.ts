@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import {
+BasketService, BasketProduct
+} from 'src/app/services/basket/basket.service';
 
 
 @Component({
@@ -14,13 +17,13 @@ export class LivraisonComponent {
   validationCoordonneesError: string[] = [];
   // formLivraison!: any;
   // validationPaymentError: string[] = [];
+  basket: BasketProduct[] = [];
 
 
-
-  constructor(private formBuilder: FormBuilder, private router: Router) {};
+  constructor(private formBuilder: FormBuilder, private router: Router, public basketService: BasketService ) {};
   ngOnInit(){
 
-
+    this.getBasket();
     this.formLivraison = this.formBuilder.group({
       nom: [null, [Validators.required]],
       prenom: [null, [Validators.required]],
@@ -28,6 +31,9 @@ export class LivraisonComponent {
       cp: [null, [Validators.required]],
       ville: [null, [Validators.required]],
     });
+  }
+  getBasket() {
+    this.basket = this.basketService.getBasket();
   }
 
   register() {

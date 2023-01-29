@@ -7,7 +7,6 @@ import { PaiementComponent } from './pages/paiement/paiement.component';
 import { PanierComponent } from './components/panier/panier.component';
 import { OffrirComponent } from './components/offrir/offrir.component';
 import { LivraisonComponent } from './components/livraison/livraison.component';
-import { MoyenPaiementComponent } from './components/moyen-paiement/moyen-paiement.component';
 import { BarreMenuActionsComponent } from './components/barre-menu-actions/barre-menu-actions.component';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -61,7 +60,6 @@ import { HistoryViewsComponent } from './components/history-views/history-views.
     PanierComponent,
     OffrirComponent,
     LivraisonComponent,
-    MoyenPaiementComponent,
     BarreMenuActionsComponent,
     HeaderComponent,
     FooterComponent,
