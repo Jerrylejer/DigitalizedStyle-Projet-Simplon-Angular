@@ -40,7 +40,7 @@ export class PaiementComponent {
       });
       console.log(this.validationError);
     } else {
-      this.router.navigate(['not-found']);
+      this.router.navigate(['/validation-commande']);
     }
   }
 }

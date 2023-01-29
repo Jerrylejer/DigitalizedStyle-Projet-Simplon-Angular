@@ -51,6 +51,7 @@ import { MasqueCasquesComponent } from './pages/masque-casques/masque-casques.co
 import { NouveauteOneCategorieComponent } from './components/nouveaute-one-categorie/nouveaute-one-categorie.component';
 import { MasqueCasquesCardComponent } from './components/masque-casques-card/masque-casques-card.component';
 import { HistoryViewsComponent } from './components/history-views/history-views.component';
+import { ValidationCommandeComponent } from './pages/validation-commande/validation-commande.component';
 
 
 @NgModule({
@@ -88,6 +89,7 @@ import { HistoryViewsComponent } from './components/history-views/history-views.
     NouveauteOneCategorieComponent,
     MasqueCasquesCardComponent,
     HistoryViewsComponent,
+    ValidationCommandeComponent,
 
   ],
   imports: [
