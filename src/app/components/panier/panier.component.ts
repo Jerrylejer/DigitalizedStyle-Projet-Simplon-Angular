@@ -17,12 +17,12 @@ export class PanierComponent {
   
   constructor(public basketService: BasketService) { 
     // Je récupère les méthodes contenues dans le BasketService
-    this.basketService.getTotalPrice();
-    this.basketService.getTotalQuantity();
+    // this.basketService.getTotalPrice();
+    // this.basketService.getTotalQuantity();
   }
 
   ngOnInit() {
-    this.basket = this.basketService.getBasket();
+    this.getBasket();
   }
 
   getBasket() {

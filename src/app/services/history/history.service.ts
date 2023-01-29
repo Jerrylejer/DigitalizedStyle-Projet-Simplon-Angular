@@ -17,7 +17,7 @@ export class HistoryService {
   // Cette fonction lance soit la création de l'historique, soit récupère l'historique s'il existe déjà
   getHistory() {
     // Je récupère les valeurs de 'basket' du LocalStorage dans une constante
-    const history = localStorage.getItem('history');
+    let history = localStorage.getItem('history');
     // Si valeur existe
     if (history) {
       // Je retourne la valeur en parsant le JSON
@@ -36,15 +36,14 @@ export class HistoryService {
     const history = this.getHistory();
     // Je vérifie si le produit existe déjà dans l'historique
     const alreadyInHistory = history.find(
-      (newProduct: Item_productdetails) =>
-        newProduct.id === product.id
+      (newProduct: Item_productdetails) => newProduct.id === product.id
     );
     // S'in existe déjà
     if (alreadyInHistory) {
       return history;
     } else {
       // S'il n'existe pas, je l'ajoute à l'historique
-      history.push(product);
+      history.push(product);;
     }
     localStorage.setItem('history', JSON.stringify(history));
   }

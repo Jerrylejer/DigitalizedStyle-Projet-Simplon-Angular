@@ -8,8 +8,8 @@
       </mat-dialog-actions>
       <div class="container">
       <app-masque-casques-card
-          *ngFor = "let productMasque of productMasque " 
-          [productMasque] = "productMasque"
+          *ngFor="let productMasques of productMasques" 
+          [productMasque]="productMasques"
         ></app-masque-casques-card>
       </div>
       <app-barre-violette></app-barre-violette>
