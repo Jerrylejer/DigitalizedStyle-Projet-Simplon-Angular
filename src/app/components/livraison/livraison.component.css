@@ -12,25 +12,16 @@
     
 }
 
-.priceMargin {
+.price-margin {
     margin-bottom: 18px;
 }
-
-
-/* .mail {
-    
-} */
-
 
 .livraison {
     display: flex;
     flex-direction: column;
 }
 
-
-
 /* Formulaire, en cas d'erreur */
-
 input {
     border: transparent;
     border-bottom: 1px solid #7e2bbb;
@@ -49,7 +40,6 @@ button {
     margin-top: 25px;
     cursor: pointer;
     width: 50%;
-    
 }
 
 button:hover {

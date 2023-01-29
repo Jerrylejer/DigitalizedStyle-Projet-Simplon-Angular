@@ -1,12 +1,29 @@
 <h1 class="titre">Mon panier</h1>
 <section class="container">
-  <section class="sectionUn">
+  <section class="section-un">
     <app-panier class="panier"></app-panier>
     <app-livraison class="livraison"></app-livraison>
   </section>
-
-  <section class="sectionDeux">
+  <section class="section-deux">
     <app-offrir class="offrir"></app-offrir>
-    <app-moyen-paiement class="moyenPaiement"></app-moyen-paiement>
+    <form [formGroup]="paymentForm" class="form">
+      <div class="inputs-form">
+        <label for="card_username">Nom Prénom</label>
+        <input type="text" id="card_username" formControlName="card_username" [class.hasError]="validationError.includes('card_username')">
+      </div>
+      <div class="inputs-form">
+        <label for="card_number">Numéro de carte</label>
+        <input type="text" id="card_number" formControlName="card_number" [class.hasError]="validationError.includes('card_number')">
+      </div>
+      <div class="inputs-form">
+        <label for="card_exp">Date d'expiration</label>
+        <input type="text" id="card_exp" formControlName="card_exp" [class.hasError]="validationError.includes('card_exp')">
+      </div>
+      <div class="inputs-form">
+        <label for="card_cvc">card_cvc</label>
+        <input type="text" id="card_cvc" formControlName="card_cvc" [class.hasError]="validationError.includes('card_cvc')">
+      </div>
+      <button type="submit" (click)="onPay()">Payer</button>
+    </form>
   </section>
 </section>

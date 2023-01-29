@@ -21,12 +21,11 @@
 
 /* SECTION UNE */
 
-.sectionUn {
+.section-un {
     display: flex;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    border: 3px solid var(--purple);
     gap: 10px;
 }
 
@@ -39,28 +38,51 @@
 }
 
 /* SECTION DEUX */
-
-.sectionDeux {
+.section-deux {
     display: flex;
+    width: 100%;
+    margin: 20px; 
+    gap: 20px;
+}
+
+form {
+    border: 2px solid var(--color-purple);
+    padding: 10px;
+    width: 31.5%;
+    line-height: 3em;
+}
+
+.inputs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 50%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
     padding: 20px;
-    margin: 20px;
-    gap: 10px;
+    border-radius: 50px;
+    margin-top: 25px;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #7e2bbb;
+    color: white;
+
 }
 
 .offrir {
-    flex: 66%;
-    border: 3px solid var(--purple);
+    width: 66%;
     border-radius: 10px;
-}
-
-.moyenPaiement {
-    display: flex;
-    flex-direction: column;
-    flex: 33%;
-    border: 3px solid var(--purple);
-    border-radius: 10px;
-    
-
+    align-self:flex-end;
 }
 
 

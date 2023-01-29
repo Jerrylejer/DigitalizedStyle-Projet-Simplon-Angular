@@ -12,6 +12,8 @@ export interface BasketProduct {
 export class BasketService {
   // Total du panier
   totalPrice: number = 0;
+  totalPriceHt: number = 0;
+
   // Quantité totale de produits du panier
   productQuantity: number = 0;
 
@@ -107,6 +109,8 @@ export class BasketService {
     );
     // Je retourne la valeur Totale à la variable totalPrice
     this.totalPrice = total;
+    this.totalPriceHt = Math.round((total / 1.2)*100)/100;
+
     // console.log(this.totalPrice);
   }
 
