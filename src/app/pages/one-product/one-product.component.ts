@@ -1,10 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastService } from 'angular-toastify';
-import {
-  ITEMPRODUCTDETAILS,
-  Item_productdetails,
-} from 'src/app/mocks/product-details.mock';
+import { ITEMPRODUCTDETAILS,Item_productdetails,} from 'src/app/mocks/product-details.mock';
 import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 import { HistoryService } from 'src/app/services/history/history.service';
 
@@ -18,8 +15,11 @@ export class OneProductComponent {
   items: Item_productdetails[] = ITEMPRODUCTDETAILS;
   item?: Item_productdetails;
   quantity: number = 0;
-
  
+
+  
+  
+  
   constructor(
     private activatedRoute: ActivatedRoute, 
     private router: Router,

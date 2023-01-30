@@ -5,7 +5,6 @@ export interface ProductNew {
     titre: string;
     icone: string;
     alt: string;
-    isNew: boolean;
     prix: number;
     unite: string;
     
@@ -14,13 +13,12 @@ export interface ProductNew {
     
       {
       id: 1,
-      produit:"MASQUES ET CASQUES",
-      image: "assets/categorieFemme/casque.png",
-      titre: "X-Vibes",
+      produit:"FASHION-SHOW",
+      image: "assets/Defiles/defile23.png",
+      titre: "Digit-show spring'2023",
       icone: "assets/wishlistCoeur/coeur1.png",
       alt: "coeur",
-      isNew: true,
-      prix: 2500,
+      prix: 4500,
       unite: "euros"
      },
      
@@ -31,9 +29,8 @@ export interface ProductNew {
       image: 'assets/categorieFemme/robe.png',
       icone: 'assets/wishlistCoeur/coeur1.png',
       alt: 'coeur',
-      isNew: true,
-       prix: 1800,
-       unite: "euros"
+      prix: 1800,
+      unite: "euros"
     },
     
   ]

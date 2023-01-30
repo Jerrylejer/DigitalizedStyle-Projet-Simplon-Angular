@@ -12,7 +12,7 @@ export class GalerieProduitComponent {
   galerieItems: Item_productdetails[] = ITEMPRODUCTDETAILS; 
   // pour récupérer le mock qui contiendra les photos carrées de chaque doudoune
   galerieItem?: Item_productdetails;
-
+  
   constructor(private activatedRoute: ActivatedRoute,
     private router: Router) {}
 
@@ -32,4 +32,5 @@ export class GalerieProduitComponent {
       this.router.navigate(['/not-found']);
     }
   }
+  
 }
