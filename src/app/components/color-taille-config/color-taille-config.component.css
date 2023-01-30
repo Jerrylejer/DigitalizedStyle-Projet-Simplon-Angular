@@ -1,0 +1,107 @@
+.colorBox, .tailleBox {
+    width: 350px;
+    height: 700px;
+    margin-left: 100px;
+}
+.config {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content:center ;
+    border: 1px solid black;
+    margin: 50px 50px 50px 50px;
+}
+
+input,label {
+    margin-top: 67px;
+    font-size: 24px;
+    padding-left: 7px;
+    width: 100px;
+}
+
+p {
+    font-size: 12px;
+    margin-top:280px;
+}
+
+
+
+mat-card-content{
+  font-size: 36px;
+  color: var( --color-purple);
+}
+
+mat-select {
+    height: 40px;
+    border: 1px solid black;
+}
+
+mat-option {
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: white;
+    height: 85px;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    background-color:white;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 2px;
+    border-radius: 50%;
+  }
+  .button1 {
+    border: 2px solid var( --color-purple);
+    background-color: rgb(217, 178, 247);
+    
+  }
+
+  .button2 {
+  background-color: rgb(255, 123, 129);
+  }
+  
+  .button3 {
+    background-color: rgb(152, 184, 240);
+    }
+
+    .button4 {
+        background-color: rgb(127, 168, 132);
+        }
+
+    .button5 {
+            background-color: white;
+            }
+
+  .white {
+    background-color: white;
+    
+}
+
+.black {
+    background-color: black;
+    
+    
+}
+
+.red {
+    background-color: red;
+}
+
+.bleu {
+    background-color:rgb(45, 119, 231);
+}
+
+.violet {
+    background-color:rgb(129, 54, 208);
+}
+
+.vert {
+    background-color:rgb(14, 89, 15);
+}

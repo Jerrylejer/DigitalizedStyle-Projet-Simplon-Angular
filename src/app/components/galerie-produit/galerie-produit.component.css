@@ -1,12 +1,18 @@
 .container {
-    width: 200px;
+    width: 125px;
+    height:650px ;
     background: url(../../../assets/hologram/hologram.jpg);
+    margin-left: 20px;
 }
 
-ul {
-    width: 86.5px;
-    
-    display: block;
-    justify-content: center;
-    margin-left: 40px;
+img {
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
+
+
+
+

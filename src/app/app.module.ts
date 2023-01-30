@@ -40,10 +40,10 @@ import { ModalComponent } from './components/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastService, AngularToastifyModule } from 'angular-toastify'; 
 import { FormsModule } from '@angular/forms';
-
+import {MatTableModule} from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -52,8 +52,12 @@ import { MasqueCasquesComponent } from './pages/masque-casques/masque-casques.co
 import { NouveauteOneCategorieComponent } from './components/nouveaute-one-categorie/nouveaute-one-categorie.component';
 import { MasqueCasquesCardComponent } from './components/masque-casques-card/masque-casques-card.component';
 import { HistoryViewsComponent } from './components/history-views/history-views.component';
-
-
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSortModule} from '@angular/material/sort';
+import { ColorTailleConfigComponent } from './components/color-taille-config/color-taille-config.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatBadgeModule} from '@angular/material/badge';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +75,7 @@ import { HistoryViewsComponent } from './components/history-views/history-views.
     ProductListComponent,
     OneProductComponent,
     NotFoundComponent,
-    
+   
     OneCategorieCardComponent,
     OneProductCardComponent,
     CarrouselComponent,
@@ -90,6 +94,8 @@ import { HistoryViewsComponent } from './components/history-views/history-views.
     NouveauteOneCategorieComponent,
     MasqueCasquesCardComponent,
     HistoryViewsComponent,
+    ColorTailleConfigComponent,
+    
 
 
 
@@ -107,6 +113,13 @@ import { HistoryViewsComponent } from './components/history-views/history-views.
     MatButtonModule,
     MatIconModule,
     MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSortModule,
+    MatTableModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatBadgeModule,
   ],
   providers: [ToastService],
   bootstrap: [AppComponent]

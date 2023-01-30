@@ -31,6 +31,7 @@ export class BarreMenuActionsComponent {
     this.barre_1?.nativeElement.classList.toggle('rotate1');
     this.barre_2?.nativeElement.classList.toggle('opacity');
     this.barre_3?.nativeElement.classList.toggle('rotate2');
-
+    
+    
   }
 }

@@ -12,7 +12,7 @@ section {
 
 img {
     width: 460px;
-    border: 2px solid black;
+    margin-left: 5px;
 }
 
 .block-text {
@@ -21,17 +21,34 @@ img {
     border: 2px solid black;
     margin-left: 5px;
     padding-top: 30px;
-    padding-left: 15px;
+   
 }
 
 .button {
+    
     margin: 0 auto 80px;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 button:hover {
     cursor: pointer;
     background: url(../../../assets/hologram/hologram.jpg);
+    opacity: 0.9;
+    border-radius: 20px;
 }
+
+h2, p {
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+}
+
+.prix {
+    font-weight: bold;
+    margin-top: 150px;
+}
+
 
 
 @media all and (max-width: 900px) { 

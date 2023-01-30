@@ -1,21 +1,21 @@
 <section>
-    
-    <div class="container">
+  <div class="container">
         <app-galerie-produit></app-galerie-produit>
         <div><img src= {{item?.image}}></div>
         <div class="block-text">
             <h2>{{item?.titre}}</h2>
+            <p>REF/ {{item?.ref}}</p>
             <p>{{item?.texte}}</p>
             <br>
-            <p>{{item?.prix}} {{item?.unite}}</p>
-           
+            <p class="prix">{{item?.prix}} {{item?.unite}}</p>
         </div>
     </div>
-   
-    <app-product-config></app-product-config>
+    <div class="config">
+    <app-color-taille-config></app-color-taille-config>
+    </div>
     <lib-toastify-toast-container [autoClose]=3000></lib-toastify-toast-container>
     <div class="button">
-        <button type="submit" (click)="addToBasket()" (click)="addInfoToast()"> AddToCart </button>
+        <button type="submit" (click)="addToBasket()" (click)="addInfoToast()"> Ajouter Au Panier </button>
     </div>
     <app-history-views></app-history-views>
 </section>
