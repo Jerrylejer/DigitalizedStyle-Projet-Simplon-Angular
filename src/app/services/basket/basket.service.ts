@@ -12,6 +12,8 @@ export interface BasketProduct {
 export class BasketService {
   // Total du panier
   totalPrice: number = 0;
+  totalPriceHt: number = 0;
+
   // Quantité totale de produits du panier
   productQuantity: number = 0;
 
@@ -48,9 +50,12 @@ export class BasketService {
     // Je récupère le panier dans une constante
     const basket = this.getBasket();
     // Je vérifie si le produit existe déjà dans le panier
-    const alreadyInBasket = basket.find((product: BasketProduct) => product.product.id === basketProduct.product.id);
+    const alreadyInBasket = basket.find(
+      (product: BasketProduct) =>
+        product.product.id === basketProduct.product.id
+    );
     // S'in existe déjà
-    if(alreadyInBasket) {
+    if (basket.length > 0 && alreadyInBasket) {
       // Je vérifie son ID dans le tableau basket
       const basketProductId = basket.indexOf(alreadyInBasket);
       // J'ajoute la quantité
@@ -58,9 +63,12 @@ export class BasketService {
     } else {
       // S'il n'existe pas, je l'ajoute au basket
       basket.push(basketProduct);
-      // localStorage.setItem('basket', basket); => Je récupère l'objet entier ! 
+      // localStorage.setItem('basket', basket); => Je récupère l'objet entier !
       // ! Voir pour faire une méthode afin d'enregistrer le panier
       localStorage.setItem('basket', JSON.stringify(basket));
+      // Je recalcule le total en prix et en quantité
+      this.getTotalPrice();
+      this.getTotalQuantity();
     }
   }
 
@@ -70,7 +78,7 @@ export class BasketService {
   removeProductFromBasket(index: number) {
     // Je récupère mon panier de base
     const basket = this.getBasket();
-    // Je supprime le produit dont l'index est renseigné en argument 
+    // Je supprime le produit dont l'index est renseigné en argument
     basket.splice(index, 1);
     //! Voir pour faire une méthode afin d'enregistrer le panier
     localStorage.setItem('basket', JSON.stringify(basket));
@@ -85,17 +93,24 @@ export class BasketService {
     // Je récupère le panier courant
     const basket = this.getBasket();
     // Calcul du prix total
-    const total = basket.reduce((accumulator: number, currentValue: BasketProduct) => {
-      // Id du produit dans mon mock
-      const product = this.productsService.getProduct(currentValue.product.id);
-      // console.log(product);
-      // Si le produit n'existe pas, je retourne la valeur de l'accumulateur, c'est à dire 0
-      if(!product) return accumulator;
-      // Si existe
-      return accumulator + (currentValue.quantity * product.prix);
-    }, 0)
+    const total = basket.reduce(
+      (accumulator: number, currentValue: BasketProduct) => {
+        // Id du produit dans mon mock
+        const product = this.productsService.getProduct(
+          currentValue.product.id
+        );
+        // console.log(product);
+        // Si le produit n'existe pas, je retourne la valeur de l'accumulateur, c'est à dire 0
+        if (!product) return accumulator;
+        // Si existe
+        return accumulator + (currentValue.quantity * product.prix);
+      },
+      0
+    );
     // Je retourne la valeur Totale à la variable totalPrice
     this.totalPrice = total;
+    this.totalPriceHt = Math.round((total / 1.2)*100)/100;
+
     // console.log(this.totalPrice);
   }
 
@@ -105,9 +120,12 @@ export class BasketService {
     // Je récupère le panier
     const basket = this.getBasket();
     // On calcule la quantité des items
-    const total = basket.reduce((accumulator: number, currentValue: BasketProduct) => {
-      return accumulator += currentValue.quantity;
-    }, 0)
+    const total = basket.reduce(
+      (accumulator: number, currentValue: BasketProduct) => {
+        return accumulator += currentValue.quantity;
+      },
+      0
+    );
     // Je retourne la quantité total à la variable productQuantity
     this.productQuantity = total;
     // console.log(this.productQuantity);

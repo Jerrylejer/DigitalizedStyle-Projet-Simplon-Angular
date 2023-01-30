@@ -56,7 +56,6 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
     icone: "assets/wishlistCoeur/coeur1.png",
     alt: "coeur", 
     ref: 45546
-
  },
  {
    id: 7,
@@ -66,5 +65,6 @@ export const ITEM_CATEGORIES: Item_categorie[]=[
    alt: "",
    ref: 8
 }]
+
  
    

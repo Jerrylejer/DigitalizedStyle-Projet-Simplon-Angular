@@ -7,7 +7,6 @@ import { PaiementComponent } from './pages/paiement/paiement.component';
 import { PanierComponent } from './components/panier/panier.component';
 import { OffrirComponent } from './components/offrir/offrir.component';
 import { LivraisonComponent } from './components/livraison/livraison.component';
-import { MoyenPaiementComponent } from './components/moyen-paiement/moyen-paiement.component';
 import { BarreMenuActionsComponent } from './components/barre-menu-actions/barre-menu-actions.component';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -52,12 +51,16 @@ import { MasqueCasquesComponent } from './pages/masque-casques/masque-casques.co
 import { NouveauteOneCategorieComponent } from './components/nouveaute-one-categorie/nouveaute-one-categorie.component';
 import { MasqueCasquesCardComponent } from './components/masque-casques-card/masque-casques-card.component';
 import { HistoryViewsComponent } from './components/history-views/history-views.component';
+
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSortModule} from '@angular/material/sort';
 import { ColorTailleConfigComponent } from './components/color-taille-config/color-taille-config.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatBadgeModule} from '@angular/material/badge';
+
+import { ValidationCommandeComponent } from './pages/validation-commande/validation-commande.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +68,6 @@ import {MatBadgeModule} from '@angular/material/badge';
     PanierComponent,
     OffrirComponent,
     LivraisonComponent,
-    MoyenPaiementComponent,
     BarreMenuActionsComponent,
     HeaderComponent,
     FooterComponent,
@@ -95,12 +97,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     MasqueCasquesCardComponent,
     HistoryViewsComponent,
     ColorTailleConfigComponent,
-    
+    ValidationCommandeComponent,
 
-
-
-    
-    
   ],
   imports: [
     BrowserModule,
